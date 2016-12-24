@@ -95,7 +95,7 @@
 <meta property="og:image" content="http://oihm5divp.bkt.clouddn.com/hexo01.jpg">
 <meta property="og:image" content="http://oihm5divp.bkt.clouddn.com/hexo03.jpg">
 <meta property="og:image" content="http://oihm5divp.bkt.clouddn.com/hexo02.jpg">
-<meta property="og:updated_time" content="2016-12-24T09:53:25.997Z">
+<meta property="og:updated_time" content="2016-12-24T09:55:27.291Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Windows环境下使用Hexo+GitHub搭建个人博客">
 <meta name="twitter:description" content="为什么使用Hexo搭建博客？博主经过一段时间的研究后，越发觉得通过Hexo搭建博客真是省时省力，简单方便。尤其是Hexo可以使用Markdown解析文章，并自动生成对应的HTML静态页面，省去了编写HTML代码的麻烦，使我们可以把大部分精力放在编写每篇文章的内容上。这里就是我基于Hexo搭建的博客，废话不多说，你也来试试吧。
@@ -380,9 +380,18 @@
 <p>我将Blog文件创建在了桌面，命名为“myblog”（这里有点小失误，建议在其他盘下创建文件）。</p>
 <h4 id="访问本地Blog页面"><a href="#访问本地Blog页面" class="headerlink" title="访问本地Blog页面"></a>访问本地Blog页面</h4><p>打开“Git Bash Here”，按运行如下代码启动服务器：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure></p>
 <p>这里为什么不安装Apache、Nginx之类的服务器就可以呢？其实Node.js自带就有一个小型的服务器，只需运行上述代码启用就可以了。<br>之后进入浏览器，在地址栏中输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>就可以访问本地的博客界面了。</p>
-<h4 id="更换为NexT主题"><a href="#更换为NexT主题" class="headerlink" title="更换为NexT主题"></a>更换为NexT主题</h4><p>Hexo有很多漂亮的开源的主题，都是一些大牛上传到GitHub分享的，我们可以下载下来运用到自己的博客上。<br>1.进入<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">这里</a>下载NexT主题压缩包，如下图所示：<br><img src="http://oihm5divp.bkt.clouddn.com/hexo03.jpg" alt="mahua"><br>2.下载完成后解压压缩包，将解压后的文件名改为“NexT”,并将该文件夹拖入到本地博客文件根目录下的“themes”文件夹中。<br>3.打开博客根目录下的修改博客根目录下的“_config.yml”文件，修改”theme:”的配置为”NexT”,记得冒号后面要有一个空格，没有空格会报错哦。<br>！<a href="http://oihm5divp.bkt.clouddn.com/hexo04.jpg" target="_blank" rel="external">mahua</a><br>4.运行如下代码更新本地静态页面：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure></p>
-<p>5.重新登录浏览器就可以看到新的主题了！了解更多NexT主题的进阶配置请进入<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">这里</a>。</p>
+<h4 id="更换为NexT主题"><a href="#更换为NexT主题" class="headerlink" title="更换为NexT主题"></a>更换为NexT主题</h4><p>Hexo有很多漂亮的开源的主题，都是一些大牛上传到GitHub分享的，我们可以下载下来运用到自己的博客上。</p>
+<ul>
+<li>第一步，进入<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">这里</a>下载NexT主题压缩包，如下图所示：<br><img src="http://oihm5divp.bkt.clouddn.com/hexo03.jpg" alt="mahua"></li>
+<li>下载完成后解压压缩包，将解压后的文件名改为“NexT”,并将该文件夹拖入到本地博客文件根目录下的“themes”文件夹中。</li>
+<li>第二步，打开博客根目录下的修改博客根目录下的“_config.yml”文件，修改”theme:”的配置为”NexT”,记得冒号后面要有一个空格，没有空格会报错哦。<br>！<a href="http://oihm5divp.bkt.clouddn.com/hexo04.jpg" target="_blank" rel="external">mahua</a></li>
+<li><p>第三步，运行如下代码更新本地静态页面：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+</li>
+<li><p>第四步，重新登录浏览器就可以看到新的主题了！了解更多NexT主题的进阶配置请进入<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">这里</a>。</p>
 <h4 id="提交代码至GitHub代码库"><a href="#提交代码至GitHub代码库" class="headerlink" title="提交代码至GitHub代码库"></a>提交代码至GitHub代码库</h4><p>可以访问本地博客了，怎样使我们的博客上线呢？这时就要借助GitHub的力量了。</p>
+</li>
+</ul>
 <ol>
 <li>登录注册<a href="https://github.com/" target="_blank" rel="external">Github</a></li>
 <li>进入“New repository”页面创建库，如下图所示：<br><img src="http://oihm5divp.bkt.clouddn.com/hexo02.jpg" alt="mahua"><br>注意红线处库名的命名规范“username.github.io”,例如我的库名“zhihengyu.github.io”，填写完之后点击“Create repository”创建项目。</li>
