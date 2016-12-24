@@ -396,12 +396,16 @@
 <p>最后得到了两个文件：“id_rsa”和“id_rsa.pub”，默认路径在“C:\Users\Administrator.XB-201611231704.ssh”文件夹中，打开“id_rsa.pub”文件，复制里面所有内容，打开GitHub,点击“Settings”,如下图所示：<br><img src="http://oihm5divp.bkt.clouddn.com/hexo5.jpg" alt="mahua"><br>之后选择“SSH and GPG keys”,点击“New SSH key”,将该才复制的“id_rsa.pub”内容拷贝到这里，给SSH起个名字点击创建就OK了，如下图所示：<br><img src="http://oihm5divp.bkt.clouddn.com/hexo06.jpg" alt="mahua"></p>
 </li>
 <li>第二步，登录注册<a href="https://github.com/" target="_blank" rel="external">Github</a></li>
-<li>第三步，进入“New repository”页面创建库，如下图所示：<br><img src="http://oihm5divp.bkt.clouddn.com/hexo02.jpg" alt="mahua"><br>注意红线处库名的命名规范“username.github.io”,例如我的库名“zhihengyu.github.io”，填写完之后点击“Create repository”创建项目。<br>之后进入下图所示的页面，按照红框中的要求，在桌面创建一个名叫“yuzhiheng.github.io”的文件夹，再此文件夹中创建“README.md”文件，然后在此文件夹右键打开“Git Bash Here”，依次运行如下代码：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ git init</div><div class="line">$ git add README.md</div><div class="line">$ git commit -m &quot;first commit&quot;</div><div class="line">$ git remote add origin git@github.com:zhihengyu/yuzhiheng.github.io.git</div><div class="line">$ git push -u origin master</div></pre></td></tr></table></figure>
+<li><p>第三步，进入“New repository”页面创建库，如下图所示：<br><img src="http://oihm5divp.bkt.clouddn.com/hexo02.jpg" alt="mahua"><br>注意红线处库名的命名规范“username.github.io”,例如我的库名“zhihengyu.github.io”，填写完之后点击“Create repository”创建项目。<br>之后进入下图所示的页面，按照红框中的要求，在桌面创建一个名叫“yuzhiheng.github.io”的文件夹，再此文件夹中创建“README.md”文件，然后在此文件夹右键打开“Git Bash Here”，依次运行如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ git init</div><div class="line">$ git add README.md</div><div class="line">$ git commit -m &quot;first commit&quot;</div><div class="line">$ git remote add origin git@github.com:zhihengyu/yuzhiheng.github.io.git</div><div class="line">$ git push -u origin master</div></pre></td></tr></table></figure>
+<p><img src="http://oihm5divp.bkt.clouddn.com/hexo07.jpg" alt="mahua"><br>经过上述操作，如果你的GitHub库中有“README.md”这个文件，就说明连接成功了。</p>
 </li>
-</ul>
-<p><img src="http://oihm5divp.bkt.clouddn.com/hexo07.jpg" alt="mahua"><br>经过上述操作，如果你的GitHub库中有“README.md”这个文件，就说明连接成功了。<br>最后一步，在你的本地博客文件夹上右键打开“Git Bash Here”，然后运行下列代码上传博客文件到GitHub库中：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate --deploy</div></pre></td></tr></table></figure></p>
+<li><p>最后一步，在你的本地博客文件夹上右键打开“Git Bash Here”，然后运行下列代码上传博客文件到GitHub库中：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate --deploy</div></pre></td></tr></table></figure>
 <p>然后打开浏览器在地址栏中输入域名<a href="http://yuzhiheng.github.io" target="_blank" rel="external">http://yuzhiheng.github.io</a>,就可以浏览线上的博客了。</p>
-<h4 id="维护博客常用Git代码"><a href="#维护博客常用Git代码" class="headerlink" title="维护博客常用Git代码"></a>维护博客常用Git代码</h4><h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4>
+<h4 id="维护博客常用Git代码"><a href="#维护博客常用Git代码" class="headerlink" title="维护博客常用Git代码"></a>维护博客常用Git代码</h4><h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4></li>
+</ul>
+
           
         
       
