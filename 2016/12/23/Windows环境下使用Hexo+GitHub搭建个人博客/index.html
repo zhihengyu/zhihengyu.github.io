@@ -99,7 +99,7 @@
 <meta property="og:image" content="http://oihm5divp.bkt.clouddn.com/hexo06.jpg">
 <meta property="og:image" content="http://oihm5divp.bkt.clouddn.com/hexo02.jpg">
 <meta property="og:image" content="http://oihm5divp.bkt.clouddn.com/hexo07.jpg">
-<meta property="og:updated_time" content="2016-12-24T11:11:25.995Z">
+<meta property="og:updated_time" content="2016-12-24T11:13:52.929Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Windows环境下使用Hexo+GitHub搭建个人博客">
 <meta name="twitter:description" content="为什么使用Hexo搭建博客？博主经过一段时间的研究后，越发觉得通过Hexo搭建博客真是省时省力，简单方便。尤其是Hexo可以使用Markdown解析文章，并自动生成对应的HTML静态页面，省去了编写HTML代码的麻烦，使我们可以把大部分精力放在编写每篇文章的内容上。这里就是我基于Hexo搭建的博客，废话不多说，你也来试试吧。
@@ -397,12 +397,12 @@
 </ul>
 <h4 id="提交代码至GitHub代码库"><a href="#提交代码至GitHub代码库" class="headerlink" title="提交代码至GitHub代码库"></a>提交代码至GitHub代码库</h4><p>可以访问本地博客了，怎样使我们的博客上线呢？这时就要借助GitHub的力量了。</p>
 <ul>
-<li>第一步，打开“Git Bash Here”，设置Git的user name和email，输入如下代码：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git config --global user.name &quot;yuzhiheng&quot;</div><div class="line">$ git config --global user.email &quot;15139975323@163.com&quot;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>生成SSH(密钥),输入如下代码一路回车，密码为空：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C “15139975323@163.com”</div></pre></td></tr></table></figure></p>
+<li><p>第一步，打开“Git Bash Here”，设置Git的user name和email，输入如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git config --global user.name &quot;yuzhiheng&quot;</div><div class="line">$ git config --global user.email &quot;15139975323@163.com&quot;</div></pre></td></tr></table></figure>
+<p>生成SSH(密钥),输入如下代码一路回车，密码为空：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C “15139975323@163.com”</div></pre></td></tr></table></figure>
 <p>最后得到了两个文件：“id_rsa”和“id_rsa.pub”，默认路径在“C:\Users\Administrator.XB-201611231704.ssh”文件夹中，打开“id_rsa.pub”文件，复制里面所有内容，打开GitHub,点击“Settings”,如下图所示：<br><img src="http://oihm5divp.bkt.clouddn.com/hexo5.jpg" alt="mahua"><br>之后选择“SSH and GPG keys”,点击“New SSH key”,将该才复制的“id_rsa.pub”内容拷贝到这里，给SSH起个名字点击创建就OK了，如下图所示：<br><img src="http://oihm5divp.bkt.clouddn.com/hexo06.jpg" alt="mahua"></p>
-<ul>
+</li>
 <li>第二步，登录注册<a href="https://github.com/" target="_blank" rel="external">Github</a></li>
 <li>第三步，进入“New repository”页面创建库，如下图所示：<br><img src="http://oihm5divp.bkt.clouddn.com/hexo02.jpg" alt="mahua"><br>注意红线处库名的命名规范“username.github.io”,例如我的库名“zhihengyu.github.io”，填写完之后点击“Create repository”创建项目。<br>之后进入下图所示的页面，按照红框中的要求，在桌面创建一个名叫“yuzhiheng.github.io”的文件夹，再此文件夹中创建“README.md”文件，然后在此文件夹右键打开“Git Bash Here”，依次运行如下代码：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ git init</div><div class="line">$ git add README.md</div><div class="line">$ git commit -m &quot;first commit&quot;</div><div class="line">$ git remote add origin git@github.com:zhihengyu/yuzhiheng.github.io.git</div><div class="line">$ git push -u origin master</div></pre></td></tr></table></figure>
 </li>
