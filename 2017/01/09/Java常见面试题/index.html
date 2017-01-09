@@ -90,7 +90,7 @@
 <meta property="og:url" content="http://yuzhiheng.me/2017/01/09/Java常见面试题/index.html">
 <meta property="og:site_name" content="YuZhiheng'Blog">
 <meta property="og:description" content="abstract class（抽象类）和interface（接口）有什么区别？你选择使用接口和抽象类的依据是什么？接口和抽象类的概念不一样。接口是对动作的抽象，抽象类是对根源的抽象。抽象类表示的是，这个对象是什么。接口表示的是，这个对象能做什么。比如，男人，女人，这两个类（如果是类的话……），他们的抽象类是人。说明，他们都是人。人可以吃东西，狗也可以吃东西，你可以把“吃东西”定义成一个接口，然后让">
-<meta property="og:updated_time" content="2017-01-09T08:37:39.667Z">
+<meta property="og:updated_time" content="2017-01-09T08:38:31.632Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java常见面试题">
 <meta name="twitter:description" content="abstract class（抽象类）和interface（接口）有什么区别？你选择使用接口和抽象类的依据是什么？接口和抽象类的概念不一样。接口是对动作的抽象，抽象类是对根源的抽象。抽象类表示的是，这个对象是什么。接口表示的是，这个对象能做什么。比如，男人，女人，这两个类（如果是类的话……），他们的抽象类是人。说明，他们都是人。人可以吃东西，狗也可以吃东西，你可以把“吃东西”定义成一个接口，然后让">
@@ -364,7 +364,7 @@
 <h4 id="HashMap与HashTable的区别？"><a href="#HashMap与HashTable的区别？" class="headerlink" title="HashMap与HashTable的区别？"></a>HashMap与HashTable的区别？</h4><p>1.hashMap去掉了HashTable 的contains方法，但是加上了containsValue（）和containsKey（）方法。<br>2.hashTable同步的，而HashMap是非同步的，效率上逼hashTable要高。<br>3.hashMap允许空键值，而hashTable不允许。</p>
 <h4 id="Overload和Override的区别。Overloaded的方法是否可以改变返回值的类型？"><a href="#Overload和Override的区别。Overloaded的方法是否可以改变返回值的类型？" class="headerlink" title="Overload和Override的区别。Overloaded的方法是否可以改变返回值的类型？"></a>Overload和Override的区别。Overloaded的方法是否可以改变返回值的类型？</h4><p>方法的重写Overriding和重载Overloading是Java多态性的不同表现。重写Overriding是父类与子类之间多态性的一种表现。如果在子类中定义某方法与其父类有相同的名称和参数，我们说该方法被重写（Overriding）。子类的对象使用方法时，将调用子类中的定义，对它而言，父类中的定义如同被”屏蔽”了。如果在一个类中定义了多个同名的方法，他们或有不同的参数个数或有不同的参数类型，则称为方法的重载（Overloading）。Overloaded的方法是可以改变返回值的类型。</p>
 <h4 id="final-finally-finalize的区别？"><a href="#final-finally-finalize的区别？" class="headerlink" title="final,finally,finalize的区别？"></a>final,finally,finalize的区别？</h4><p>final修饰符（关键字）如果一个类被声明为final，意味着它不能再派生出新的子类，不能作为父类被继承。因此一个类不能既被声明为abstract的，又被声明为final的。将变量或方法声明为final,可以保证它们在使用中不被改变。被声明为final的变量必须在声明时给定初值，而在以后的引用中只能读取，不可修改。被声明为final的方法也同样只能使用，不能重写Override，可以重载Overload。<br>Finally在异常处理时提供finally块来执行任何清除操作。如果抛出一个异常，那么相匹配的catch子句就会执行，然后控制就会进入finally块。<br>finalize方法名。Java技术允许使用finalize()方法在垃圾收集器将对象从内存中清除出去之前做必要的清理工作。这个方法是由垃圾收集器在确定这个对象没有被引用时对这个对象调用。它是在Object类中定义的，因此所有的类都继承了它。子类覆盖了finalize()方法以整理系统资源或者执行其他清理工作。finalize()方法是在垃圾回收器删除对象之前对这个对象调用的。</p>
-<h4 id="更新中…"><a href="#更新中…" class="headerlink" title="更新中…"></a>更新中…</h4>
+<h4 id="更新中……"><a href="#更新中……" class="headerlink" title="更新中……"></a>更新中……</h4>
       
     </div>
 
@@ -544,7 +544,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#abstract-class（抽象类）和interface（接口）有什么区别？你选择使用接口和抽象类的依据是什么？"><span class="nav-number">1.</span> <span class="nav-text">abstract class（抽象类）和interface（接口）有什么区别？你选择使用接口和抽象类的依据是什么？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#HashMap与HashTable的区别？"><span class="nav-number">2.</span> <span class="nav-text">HashMap与HashTable的区别？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Overload和Override的区别。Overloaded的方法是否可以改变返回值的类型？"><span class="nav-number">3.</span> <span class="nav-text">Overload和Override的区别。Overloaded的方法是否可以改变返回值的类型？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#final-finally-finalize的区别？"><span class="nav-number">4.</span> <span class="nav-text">final,finally,finalize的区别？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#更新中…"><span class="nav-number">5.</span> <span class="nav-text">更新中…</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#abstract-class（抽象类）和interface（接口）有什么区别？你选择使用接口和抽象类的依据是什么？"><span class="nav-number">1.</span> <span class="nav-text">abstract class（抽象类）和interface（接口）有什么区别？你选择使用接口和抽象类的依据是什么？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#HashMap与HashTable的区别？"><span class="nav-number">2.</span> <span class="nav-text">HashMap与HashTable的区别？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Overload和Override的区别。Overloaded的方法是否可以改变返回值的类型？"><span class="nav-number">3.</span> <span class="nav-text">Overload和Override的区别。Overloaded的方法是否可以改变返回值的类型？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#final-finally-finalize的区别？"><span class="nav-number">4.</span> <span class="nav-text">final,finally,finalize的区别？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#更新中……"><span class="nav-number">5.</span> <span class="nav-text">更新中……</span></a></li></ol></div>
             
 
           </div>
