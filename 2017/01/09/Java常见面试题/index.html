@@ -90,7 +90,7 @@
 <meta property="og:url" content="http://yuzhiheng.me/2017/01/09/Java常见面试题/index.html">
 <meta property="og:site_name" content="YuZhiheng'Blog">
 <meta property="og:description" content="abstract class（抽象类）和interface（接口）有什么区别？你选择使用接口和抽象类的依据是什么？接口和抽象类的概念不一样。接口是对动作的抽象，抽象类是对根源的抽象。抽象类表示的是，这个对象是什么。接口表示的是，这个对象能做什么。比如，男人，女人，这两个类（如果是类的话……），他们的抽象类是人。说明，他们都是人。人可以吃东西，狗也可以吃东西，你可以把“吃东西”定义成一个接口，然后让">
-<meta property="og:updated_time" content="2017-01-09T07:38:31.994Z">
+<meta property="og:updated_time" content="2017-01-09T07:47:14.467Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java常见面试题">
 <meta name="twitter:description" content="abstract class（抽象类）和interface（接口）有什么区别？你选择使用接口和抽象类的依据是什么？接口和抽象类的概念不一样。接口是对动作的抽象，抽象类是对根源的抽象。抽象类表示的是，这个对象是什么。接口表示的是，这个对象能做什么。比如，男人，女人，这两个类（如果是类的话……），他们的抽象类是人。说明，他们都是人。人可以吃东西，狗也可以吃东西，你可以把“吃东西”定义成一个接口，然后让">
@@ -360,7 +360,8 @@
       
 
       
-        <h4 id="abstract-class（抽象类）和interface（接口）有什么区别？你选择使用接口和抽象类的依据是什么？"><a href="#abstract-class（抽象类）和interface（接口）有什么区别？你选择使用接口和抽象类的依据是什么？" class="headerlink" title="abstract class（抽象类）和interface（接口）有什么区别？你选择使用接口和抽象类的依据是什么？"></a>abstract class（抽象类）和interface（接口）有什么区别？你选择使用接口和抽象类的依据是什么？</h4><p>接口和抽象类的概念不一样。接口是对动作的抽象，抽象类是对根源的抽象。<br>抽象类表示的是，这个对象是什么。接口表示的是，这个对象能做什么。比如，男人，女人，这两个类（如果是类的话……），他们的抽象类是人。说明，他们都是人。<br>人可以吃东西，狗也可以吃东西，你可以把“吃东西”定义成一个接口，然后让这些类去实现它。<br>所以，在高级语言上，一个类只能继承一个类（抽象类）(正如人不可能同时是生物和非生物)，但是可以实现多个接口(吃饭接口、走路接口)。<br>总结几句话来说：<br>1、抽象类和接口都不能直接实例化，如果要实例化，抽象类变量必须指向实现所有抽象方法的子类对象，接口变量必须指向实现所有接口方法的类对象。<br>2、抽象类要被子类继承，接口要被类实现。<br>3、接口只能做方法申明，抽象类中可以做方法申明，也可以做方法实现。<br>4、接口里定义的变量只能是公共的静态的常量，抽象类中的变量是普通变量。<br>5、抽象类里的抽象方法必须全部被子类所实现，如果子类不能全部实现父类抽象方法，那么该子类只能是抽象类。同样，一个实现接口的时候，如不能全部实现接口方法，那么该类也只能为抽象类。<br>6、抽象方法只能申明，不能实现，接口是设计的结果 ，抽象类是重构的结果。<br>7、抽象类里可以没有抽象方法。<br>8、如果一个类里有抽象方法，那么这个类只能是抽象类。<br>9、抽象方法要被实现，所以不能是静态的，也不能是私有的。<br>10、接口可继承接口，并可多继承接口，但类只能单根继承。</p>
+        <h4 id="abstract-class（抽象类）和interface（接口）有什么区别？你选择使用接口和抽象类的依据是什么？"><a href="#abstract-class（抽象类）和interface（接口）有什么区别？你选择使用接口和抽象类的依据是什么？" class="headerlink" title="abstract class（抽象类）和interface（接口）有什么区别？你选择使用接口和抽象类的依据是什么？"></a>abstract class（抽象类）和interface（接口）有什么区别？你选择使用接口和抽象类的依据是什么？</h4><p>接口和抽象类的概念不一样。接口是对动作的抽象，抽象类是对根源的抽象。<br>抽象类表示的是，这个对象是什么。接口表示的是，这个对象能做什么。比如，男人，女人，这两个类（如果是类的话……），他们的抽象类是人。说明，他们都是人。<br>人可以吃东西，狗也可以吃东西，你可以把“吃东西”定义成一个接口，然后让这些类去实现它。<br>所以，在高级语言上，一个类只能继承一个类（抽象类）(正如人不可能同时是生物和非生物)，但是可以实现多个接口(吃饭接口、走路接口)。<br>总结几句话来说：<br>1.抽象类和接口都不能直接实例化，如果要实例化，抽象类变量必须指向实现所有抽象方法的子类对象，接口变量必须指向实现所有接口方法的类对象。<br>2.抽象类要被子类继承，接口要被类实现。<br>3.接口只能做方法申明，抽象类中可以做方法申明，也可以做方法实现。<br>4.接口里定义的变量只能是公共的静态的常量，抽象类中的变量是普通变量。<br>5.抽象类里的抽象方法必须全部被子类所实现，如果子类不能全部实现父类抽象方法，那么该子类只能是抽象类。同样，一个实现接口的时候，如不能全部实现接口方法，那么该类也只能为抽象类。<br>6.抽象方法只能申明，不能实现，接口是设计的结果 ，抽象类是重构的结果。<br>7.抽象类里可以没有抽象方法。<br>8.如果一个类里有抽象方法，那么这个类只能是抽象类。<br>9.抽象方法要被实现，所以不能是静态的，也不能是私有的。<br>10.接口可继承接口，并可多继承接口，但类只能单根继承。</p>
+<h4 id="HashMap与HashTable的区别？"><a href="#HashMap与HashTable的区别？" class="headerlink" title="HashMap与HashTable的区别？"></a>HashMap与HashTable的区别？</h4><p>1.hashMap去掉了HashTable 的contains方法，但是加上了containsValue（）和containsKey（）方法。<br>2.hashTable同步的，而HashMap是非同步的，效率上逼hashTable要高。<br>3.hashMap允许空键值，而hashTable不允许。</p>
 
       
     </div>
@@ -541,7 +542,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#abstract-class（抽象类）和interface（接口）有什么区别？你选择使用接口和抽象类的依据是什么？"><span class="nav-number">1.</span> <span class="nav-text">abstract class（抽象类）和interface（接口）有什么区别？你选择使用接口和抽象类的依据是什么？</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#abstract-class（抽象类）和interface（接口）有什么区别？你选择使用接口和抽象类的依据是什么？"><span class="nav-number">1.</span> <span class="nav-text">abstract class（抽象类）和interface（接口）有什么区别？你选择使用接口和抽象类的依据是什么？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#HashMap与HashTable的区别？"><span class="nav-number">2.</span> <span class="nav-text">HashMap与HashTable的区别？</span></a></li></ol></div>
             
 
           </div>
