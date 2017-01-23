@@ -92,7 +92,7 @@
 <meta property="og:site_name" content="YuZhiheng'Blog">
 <meta property="og:description" content="概述Hibernate框架简介HIbernates是一个开放原代码的对象关系映射框架，它对JDBC进行了封装，提供了强大、高性能的对象关系型数据库的持久化服务。
 持久化了解持久化之前先来了解一下瞬时状态和持久状态。(1)瞬时状态：在程序运行的时候，有些程序数据保存在内存中，当程序退出后，这些数据就不复存在了，这些数据的状态为瞬时的。(2)持久状态：有些数据，在程序退出后，还以文件等形式保存在硬盘中">
-<meta property="og:updated_time" content="2017-01-23T12:08:11.288Z">
+<meta property="og:updated_time" content="2017-01-23T12:14:15.900Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hibernate框架">
 <meta name="twitter:description" content="概述Hibernate框架简介HIbernates是一个开放原代码的对象关系映射框架，它对JDBC进行了封装，提供了强大、高性能的对象关系型数据库的持久化服务。
@@ -363,10 +363,11 @@
       
 
       
-        <h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><h5 id="Hibernate框架简介"><a href="#Hibernate框架简介" class="headerlink" title="Hibernate框架简介"></a>Hibernate框架简介</h5><p>HIbernates是一个开放原代码的对象关系映射框架，它对JDBC进行了封装，提供了强大、高性能的对象关系型数据库的持久化服务。</p>
-<h5 id="持久化"><a href="#持久化" class="headerlink" title="持久化"></a>持久化</h5><p>了解持久化之前先来了解一下瞬时状态和持久状态。<br>(1)瞬时状态：在程序运行的时候，有些程序数据保存在内存中，当程序退出后，这些数据就不复存在了，这些数据的状态为瞬时的。<br>(2)持久状态：有些数据，在程序退出后，还以文件等形式保存在硬盘中，这些数据的状态是持久的。所以在三层结构中，DAO层也称为持久化层。<br>持久化就是将程序中的数据在瞬时状态和持久状态之间转换的机制。JDBC就是一种持久化机制。将程序数据直接保存成文件也是持久化机制的一种实现，但常用的是将程序数据保存在数据库中。<br>其实，持久化通常都是将程序数据保存在数据库中或是将数据库中的数据读取出来。</p>
+        <h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><h6 id="Hibernate框架简介"><a href="#Hibernate框架简介" class="headerlink" title="Hibernate框架简介"></a>Hibernate框架简介</h6><p>HIbernates是一个开放原代码的对象关系映射框架，它对JDBC进行了封装，提供了强大、高性能的对象关系型数据库的持久化服务。</p>
+<h6 id="持久化"><a href="#持久化" class="headerlink" title="持久化"></a>持久化</h6><p>了解持久化之前先来了解一下瞬时状态和持久状态。<br>(1)瞬时状态：在程序运行的时候，有些程序数据保存在内存中，当程序退出后，这些数据就不复存在了，这些数据的状态为瞬时的。<br>(2)持久状态：有些数据，在程序退出后，还以文件等形式保存在硬盘中，这些数据的状态是持久的。所以在三层结构中，DAO层也称为持久化层。<br>持久化就是将程序中的数据在瞬时状态和持久状态之间转换的机制。JDBC就是一种持久化机制。将程序数据直接保存成文件也是持久化机制的一种实现，但常用的是将程序数据保存在数据库中。<br>其实，持久化通常都是将程序数据保存在数据库中或是将数据库中的数据读取出来。</p>
 <h5 id="ORM"><a href="#ORM" class="headerlink" title="ORM"></a>ORM</h5><p>在编程时，以面向对象的方式处理数据，在保存数据的时候，却以关系型数据的形式存储到数据库中。所以，需要一种能在两者间进行数据转换的机制。这种机制称为对象-关系映射机制(Object Relation Mapping)，简称为ORM。<br>能实现ORM这个功能的框架有很多，Hibernate就是其中之一。</p>
-<h4 id="Hibernate基础环境搭建"><a href="#Hibernate基础环境搭建" class="headerlink" title="Hibernate基础环境搭建"></a>Hibernate基础环境搭建</h4><h5 id="Hibernate配置"><a href="#Hibernate配置" class="headerlink" title="Hibernate配置"></a>Hibernate配置</h5>
+<h4 id="Hibernate基础环境搭建"><a href="#Hibernate基础环境搭建" class="headerlink" title="Hibernate基础环境搭建"></a>Hibernate基础环境搭建</h4><h5 id="Hibernate配置"><a href="#Hibernate配置" class="headerlink" title="Hibernate配置"></a>Hibernate配置</h5><p>官网下载Hibernate框架的jar包。</p>
+
       
     </div>
 
@@ -546,7 +547,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Hibernate框架简介"><span class="nav-number">1.1.</span> <span class="nav-text">Hibernate框架简介</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#持久化"><span class="nav-number">1.2.</span> <span class="nav-text">持久化</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#ORM"><span class="nav-number">1.3.</span> <span class="nav-text">ORM</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hibernate基础环境搭建"><span class="nav-number">2.</span> <span class="nav-text">Hibernate基础环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Hibernate配置"><span class="nav-number">2.1.</span> <span class="nav-text">Hibernate配置</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#Hibernate框架简介"><span class="nav-number">1.0.1.</span> <span class="nav-text">Hibernate框架简介</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#持久化"><span class="nav-number">1.0.2.</span> <span class="nav-text">持久化</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#ORM"><span class="nav-number">1.1.</span> <span class="nav-text">ORM</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hibernate基础环境搭建"><span class="nav-number">2.</span> <span class="nav-text">Hibernate基础环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Hibernate配置"><span class="nav-number">2.1.</span> <span class="nav-text">Hibernate配置</span></a></li></ol></li></ol></div>
             
 
           </div>
