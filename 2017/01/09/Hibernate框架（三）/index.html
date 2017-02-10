@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Java," />
+  <meta name="keywords" content="Hibernate," />
 
 
 
@@ -84,46 +84,40 @@
 
 
 
-<meta name="description" content="基本数据类型与引用数据类型
-在栈中可以直接分配内存的数据是。
-引用数据类型：是数据的引用在栈中，但是他的对象在堆中。
+<meta name="description" content="Hibernate关联映射多对一关联关系
+例：配置Emp到Dept的多对一关联
 
-java四类八种基本数据类型
-整型 byte short int long
-浮点型 float double
-布尔型 boolean(它只有两个值可取true false)
-字符型 char
 
-java中默认的整数类型是int类型，如果要定义为float型，则要在数值后加上l或L">
+Emp持久化类
+12345public class Emp implements Serializable&amp;#123;	......	private Dept dept; 	//省略其他属性及getter、setter访问器&amp;#125;
+
+Emp.hbm.xml
+1234&amp;lt;class name=&quot;entity">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java基本数据类型">
-<meta property="og:url" content="http://yuzhiheng.me/2017/02/01/Java基本数据类型/index.html">
+<meta property="og:title" content="Hibernate框架（三）">
+<meta property="og:url" content="http://yuzhiheng.me/2017/01/09/Hibernate框架（三）/index.html">
 <meta property="og:site_name" content="YuZhiheng'Blog">
-<meta property="og:description" content="基本数据类型与引用数据类型
-在栈中可以直接分配内存的数据是。
-引用数据类型：是数据的引用在栈中，但是他的对象在堆中。
+<meta property="og:description" content="Hibernate关联映射多对一关联关系
+例：配置Emp到Dept的多对一关联
 
-java四类八种基本数据类型
-整型 byte short int long
-浮点型 float double
-布尔型 boolean(它只有两个值可取true false)
-字符型 char
 
-java中默认的整数类型是int类型，如果要定义为float型，则要在数值后加上l或L">
-<meta property="og:updated_time" content="2017-02-10T04:24:07.649Z">
+Emp持久化类
+12345public class Emp implements Serializable&amp;#123;	......	private Dept dept; 	//省略其他属性及getter、setter访问器&amp;#125;
+
+Emp.hbm.xml
+1234&amp;lt;class name=&quot;entity">
+<meta property="og:updated_time" content="2017-02-10T09:24:36.850Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java基本数据类型">
-<meta name="twitter:description" content="基本数据类型与引用数据类型
-在栈中可以直接分配内存的数据是。
-引用数据类型：是数据的引用在栈中，但是他的对象在堆中。
+<meta name="twitter:title" content="Hibernate框架（三）">
+<meta name="twitter:description" content="Hibernate关联映射多对一关联关系
+例：配置Emp到Dept的多对一关联
 
-java四类八种基本数据类型
-整型 byte short int long
-浮点型 float double
-布尔型 boolean(它只有两个值可取true false)
-字符型 char
 
-java中默认的整数类型是int类型，如果要定义为float型，则要在数值后加上l或L">
+Emp持久化类
+12345public class Emp implements Serializable&amp;#123;	......	private Dept dept; 	//省略其他属性及getter、setter访问器&amp;#125;
+
+Emp.hbm.xml
+1234&amp;lt;class name=&quot;entity">
 
 
 
@@ -151,13 +145,13 @@ java中默认的整数类型是int类型，如果要定义为float型，则要�
 
 
 
-  <link rel="canonical" href="http://yuzhiheng.me/2017/02/01/Java基本数据类型/"/>
+  <link rel="canonical" href="http://yuzhiheng.me/2017/01/09/Hibernate框架（三）/"/>
 
 
 
 
 
-  <title> Java基本数据类型 | YuZhiheng'Blog </title>
+  <title> Hibernate框架（三） | YuZhiheng'Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -288,7 +282,7 @@ java中默认的整数类型是int类型，如果要定义为float型，则要�
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yuzhiheng.me/2017/02/01/Java基本数据类型/">
+  <link itemprop="mainEntityOfPage" href="http://yuzhiheng.me/2017/01/09/Hibernate框架（三）/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Yu Zhiheng">
@@ -312,7 +306,7 @@ java中默认的整数类型是int类型，如果要定义为float型，则要�
             
             
               
-                Java基本数据类型
+                Hibernate框架（三）
               
             
           </h1>
@@ -325,8 +319,8 @@ java中默认的整数类型是int类型，如果要定义为float型，则要�
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-01T12:21:21+08:00">
-                2017-02-01
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-09T15:27:26+08:00">
+                2017-01-09
               </time>
             
 
@@ -355,8 +349,8 @@ java中默认的整数类型是int类型，如果要定义为float型，则要�
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/技术/Java/" itemprop="url" rel="index">
-                    <span itemprop="name">Java</span>
+                  <a href="/categories/技术/框架/" itemprop="url" rel="index">
+                    <span itemprop="name">框架</span>
                   </a>
                 </span>
 
@@ -390,26 +384,30 @@ java中默认的整数类型是int类型，如果要定义为float型，则要�
       
 
       
-        <h4 id="基本数据类型与引用数据类型"><a href="#基本数据类型与引用数据类型" class="headerlink" title="基本数据类型与引用数据类型"></a>基本数据类型与引用数据类型</h4><ul>
-<li>在栈中可以直接分配内存的数据是。</li>
-<li>引用数据类型：是数据的引用在栈中，但是他的对象在堆中。</li>
+        <h4 id="Hibernate关联映射"><a href="#Hibernate关联映射" class="headerlink" title="Hibernate关联映射"></a>Hibernate关联映射</h4><h5 id="多对一关联关系"><a href="#多对一关联关系" class="headerlink" title="多对一关联关系"></a>多对一关联关系</h5><ul>
+<li>例：配置Emp到Dept的多对一关联</li>
 </ul>
-<h4 id="java四类八种基本数据类型"><a href="#java四类八种基本数据类型" class="headerlink" title="java四类八种基本数据类型"></a>java四类八种基本数据类型</h4><ol>
-<li>整型 byte short int long</li>
-<li>浮点型 float double</li>
-<li>布尔型 boolean(它只有两个值可取true false)</li>
-<li>字符型 char</li>
+<ol>
+<li><p>Emp持久化类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Emp</span> <span class="keyword">implements</span> <span class="title">Serializable</span></span>&#123;</div><div class="line">	......</div><div class="line">	<span class="keyword">private</span> Dept dept; </div><div class="line">	<span class="comment">//省略其他属性及getter、setter访问器</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>Emp.hbm.xml</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">class</span> <span class="attr">name</span>=<span class="string">"entity.Emp"</span> <span class="attr">table</span>=<span class="string">"emp"</span>&gt;</span></div><div class="line">	......</div><div class="line">	<span class="tag">&lt;<span class="name">many-to-one</span> <span class="attr">name</span>=<span class="string">"dept"</span> <span class="attr">column</span>=<span class="string">"DEPTNO"</span> <span class="attr">class</span>=<span class="string">"entity.Dept"</span> /&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">class</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
 </ol>
-<p>java中默认的整数类型是int类型，如果要定义为float型，则要在数值后加上l或L；<br>默认的浮点型也是双精度浮点，如果要定义为float型，则要在数值后加上f或F。</p>
-<h4 id="基本数据类型自动转换"><a href="#基本数据类型自动转换" class="headerlink" title="基本数据类型自动转换"></a>基本数据类型自动转换</h4><ul>
-<li>byte -&gt; short</li>
-<li>char -&gt; int -&gt; long      </li>
-<li>float -&gt; double</li>
-<li>int -&gt; float</li>
-<li>long -&gt; double</li>
+<h5 id="一对多关联关系"><a href="#一对多关联关系" class="headerlink" title="一对多关联关系"></a>一对多关联关系</h5><ul>
+<li>例：配置Dept到Emp的一对多关联</li>
 </ul>
-<p>记住：小可转大，大转小会失去精度！！！</p>
-
+<ol>
+<li><p>Dept持久化类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Dept</span> <span class="keyword">implements</span> <span class="title">Serializable</span></span>&#123;</div><div class="line">	......</div><div class="line">	<span class="keyword">private</span> Set&lt;Emp&gt; emps = <span class="keyword">new</span> HashSet&lt;Emp&gt;();</div><div class="line">	<span class="comment">//省略其他属性及getter、setter访问器</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>Dept.hbm.xml</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">class</span> <span class="attr">name</span>=<span class="string">"entity.Dept"</span> <span class="attr">table</span>=<span class="string">"dept"</span>&gt;</span></div><div class="line">	......</div><div class="line">	<span class="tag">&lt;<span class="name">set</span> <span class="attr">name</span>=<span class="string">"emps"</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">key</span> <span class="attr">column</span>=<span class="string">"DEPTNO"</span>&gt;</span><span class="tag">&lt;/<span class="name">key</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">one-to-many</span> <span class="attr">class</span>=<span class="string">"entity.Emp"</span> /&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">set</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">class</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h5 id="cascade属性"><a href="#cascade属性" class="headerlink" title="cascade属性"></a>cascade属性</h5><p>级联操作是指当主控方执行某项操作时是否要对被关联对象也执行相同的操作。cascade属性的作用是描述关联关系对象进行操作时的级联特性。想要级联操作必须配置cascade属性。</p>
+<table><tr><th>casxade属性值</th><th>描述</th></tr><tr><td>none</td><td>当Session操纵当前对象时，忽略其他关联对象，它是cascade属性的默认值</td></tr><tr><td>save-update</td><td>当通过Session的save()、update()及saveOrUpdate()方法来保存或更新当前对象时，级联保存所有关联的新建的瞬时状态的对象，并且级联更新所有关联的游离状态的对象</td></tr><tr><td>delete</td><td>当通过Session的delete()方法删除当前对象时，会级联删除所有的关联的对象。</td></tr><tr><td>all</td><td>包含save-update,delete的行为</td></tr></table>    
       
     </div>
 
@@ -432,7 +430,7 @@ java中默认的整数类型是int类型，如果要定义为float型，则要�
       
         <div class="post-tags">
           
-            <a href="/tags/Java/" rel="tag"># Java</a>
+            <a href="/tags/Hibernate/" rel="tag"># Hibernate</a>
           
         </div>
       
@@ -441,8 +439,8 @@ java中默认的整数类型是int类型，如果要定义为float型，则要�
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/01/09/Hibernate框架（一）/" rel="next" title="Hibernate框架（一）">
-                <i class="fa fa-chevron-left"></i> Hibernate框架（一）
+              <a href="/2016/12/23/Windows环境下使用Hexo+GitHub搭建个人博客/" rel="next" title="Windows环境下使用Hexo+GitHub搭建个人博客">
+                <i class="fa fa-chevron-left"></i> Windows环境下使用Hexo+GitHub搭建个人博客
               </a>
             
           </div>
@@ -451,8 +449,8 @@ java中默认的整数类型是int类型，如果要定义为float型，则要�
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/02/01/Hibernate实体类属性应该使用int还是Integer/" rel="prev" title="Hibernate实体类属性应该使用int还是Integer">
-                Hibernate实体类属性应该使用int还是Integer <i class="fa fa-chevron-right"></i>
+              <a href="/2017/01/09/Hibernate框架（二）/" rel="prev" title="Hibernate框架（二）">
+                Hibernate框架（二） <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -593,7 +591,7 @@ java中默认的整数类型是int类型，如果要定义为float型，则要�
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#基本数据类型与引用数据类型"><span class="nav-number">1.</span> <span class="nav-text">基本数据类型与引用数据类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#java四类八种基本数据类型"><span class="nav-number">2.</span> <span class="nav-text">java四类八种基本数据类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基本数据类型自动转换"><span class="nav-number">3.</span> <span class="nav-text">基本数据类型自动转换</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Hibernate关联映射"><span class="nav-number">1.</span> <span class="nav-text">Hibernate关联映射</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#多对一关联关系"><span class="nav-number">1.1.</span> <span class="nav-text">多对一关联关系</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#一对多关联关系"><span class="nav-number">1.2.</span> <span class="nav-text">一对多关联关系</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#cascade属性"><span class="nav-number">1.3.</span> <span class="nav-text">cascade属性</span></a></li></ol></li></ol></div>
             
 
           </div>
