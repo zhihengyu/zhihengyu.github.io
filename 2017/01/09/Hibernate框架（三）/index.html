@@ -106,7 +106,7 @@ Emp持久化类
 
 Emp.hbm.xml
 1234&amp;lt;class name=&quot;entity">
-<meta property="og:updated_time" content="2017-02-10T09:24:36.850Z">
+<meta property="og:updated_time" content="2017-02-10T11:19:40.595Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hibernate框架（三）">
 <meta name="twitter:description" content="Hibernate关联映射多对一关联关系
@@ -407,7 +407,7 @@ Emp.hbm.xml
 </li>
 </ol>
 <h5 id="cascade属性"><a href="#cascade属性" class="headerlink" title="cascade属性"></a>cascade属性</h5><p>级联操作是指当主控方执行某项操作时是否要对被关联对象也执行相同的操作。cascade属性的作用是描述关联关系对象进行操作时的级联特性。想要级联操作必须配置cascade属性。</p>
-<table><tr><th>casxade属性值</th><th>描述</th></tr><tr><td>none</td><td>当Session操纵当前对象时，忽略其他关联对象，它是cascade属性的默认值</td></tr><tr><td>save-update</td><td>当通过Session的save()、update()及saveOrUpdate()方法来保存或更新当前对象时，级联保存所有关联的新建的瞬时状态的对象，并且级联更新所有关联的游离状态的对象</td></tr><tr><td>delete</td><td>当通过Session的delete()方法删除当前对象时，会级联删除所有的关联的对象。</td></tr><tr><td>all</td><td>包含save-update,delete的行为</td></tr></table>    
+<table><tr><th>cascade属性值</th><th>描述</th></tr><tr><td>none</td><td>当Session操纵当前对象时，忽略其他关联对象，它是cascade属性的默认值</td></tr><tr><td>save-update</td><td>当通过Session的save()、update()及saveOrUpdate()方法来保存或更新当前对象时，级联保存所有关联的新建的瞬时状态的对象，并且级联更新所有关联的游离状态的对象</td></tr><tr><td>delete</td><td>当通过Session的delete()方法删除当前对象时，会级联删除所有的关联的对象。</td></tr><tr><td>all</td><td>包含save-update,delete的行为</td></tr></table>    
       
     </div>
 
