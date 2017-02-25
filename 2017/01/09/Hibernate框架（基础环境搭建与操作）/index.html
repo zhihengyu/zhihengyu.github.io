@@ -87,14 +87,14 @@
 <meta name="description" content="概述Hibernate框架简介HIbernates是一个开放原代码的对象关系映射框架，它对JDBC进行了封装，提供了强大、高性能的对象关系型数据库的持久化服务。
 持久化了解持久化之前先来了解一下瞬时状态和持久状态。(1)瞬时状态：在程序运行的时候，有些程序数据保存在内存中，当程序退出后，这些数据就不复存在了，这些数据的状态为瞬时的。(2)持久状态：有些数据，在程序退出后，还以文件等形式保存在硬盘中">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hibernate框架（一）">
-<meta property="og:url" content="http://yuzhiheng.me/2017/01/09/Hibernate框架（一）/index.html">
+<meta property="og:title" content="Hibernate框架（基础环境搭建与操作）">
+<meta property="og:url" content="http://yuzhiheng.me/2017/01/09/Hibernate框架（基础环境搭建与操作）/index.html">
 <meta property="og:site_name" content="YuZhiheng'Blog">
 <meta property="og:description" content="概述Hibernate框架简介HIbernates是一个开放原代码的对象关系映射框架，它对JDBC进行了封装，提供了强大、高性能的对象关系型数据库的持久化服务。
 持久化了解持久化之前先来了解一下瞬时状态和持久状态。(1)瞬时状态：在程序运行的时候，有些程序数据保存在内存中，当程序退出后，这些数据就不复存在了，这些数据的状态为瞬时的。(2)持久状态：有些数据，在程序退出后，还以文件等形式保存在硬盘中">
-<meta property="og:updated_time" content="2017-02-10T05:43:21.740Z">
+<meta property="og:updated_time" content="2017-02-24T12:36:55.723Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hibernate框架（一）">
+<meta name="twitter:title" content="Hibernate框架（基础环境搭建与操作）">
 <meta name="twitter:description" content="概述Hibernate框架简介HIbernates是一个开放原代码的对象关系映射框架，它对JDBC进行了封装，提供了强大、高性能的对象关系型数据库的持久化服务。
 持久化了解持久化之前先来了解一下瞬时状态和持久状态。(1)瞬时状态：在程序运行的时候，有些程序数据保存在内存中，当程序退出后，这些数据就不复存在了，这些数据的状态为瞬时的。(2)持久状态：有些数据，在程序退出后，还以文件等形式保存在硬盘中">
 
@@ -124,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://yuzhiheng.me/2017/01/09/Hibernate框架（一）/"/>
+  <link rel="canonical" href="http://yuzhiheng.me/2017/01/09/Hibernate框架（基础环境搭建与操作）/"/>
 
 
 
 
 
-  <title> Hibernate框架（一） | YuZhiheng'Blog </title>
+  <title> Hibernate框架（基础环境搭建与操作） | YuZhiheng'Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -261,7 +261,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yuzhiheng.me/2017/01/09/Hibernate框架（一）/">
+  <link itemprop="mainEntityOfPage" href="http://yuzhiheng.me/2017/01/09/Hibernate框架（基础环境搭建与操作）/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Yu Zhiheng">
@@ -285,7 +285,7 @@
             
             
               
-                Hibernate框架（一）
+                Hibernate框架（基础环境搭建与操作）
               
             
           </h1>
@@ -423,8 +423,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/01/09/Hibernate框架（二）/" rel="next" title="Hibernate框架（二）">
-                <i class="fa fa-chevron-left"></i> Hibernate框架（二）
+              <a href="/2017/01/09/MySQL数据库（DDL）/" rel="next" title="MySQL数据库（DDL）">
+                <i class="fa fa-chevron-left"></i> MySQL数据库（DDL）
               </a>
             
           </div>
@@ -433,8 +433,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/02/01/Java基本数据类型/" rel="prev" title="Java基本数据类型">
-                Java基本数据类型 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/01/09/Hibernate框架（HQL查询语句）/" rel="prev" title="Hibernate框架（HQL查询语句）">
+                Hibernate框架（HQL查询语句） <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -503,7 +503,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-count">9</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -511,7 +511,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -520,7 +520,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

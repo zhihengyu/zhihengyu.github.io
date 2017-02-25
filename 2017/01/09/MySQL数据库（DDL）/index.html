@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hibernate," />
+  <meta name="keywords" content="MySql," />
 
 
 
@@ -84,19 +84,61 @@
 
 
 
-<meta name="description" content="我们知道，hibernate并没有强制要求pojo（实体类 ）属性必须是基本数据类型或者是包装类，但是我们把属性声明为基本数据类型（ primitive types directly）或者包装类 （ wrapping classes for primitives）对我们代码的编写有着深远的影响。
-使用基本数据类型的好处(a)使用基本数据类型意味着你所定义的属性不允许为空，这样你在获取该属性的时候就">
+<meta name="description" content="DDL(数据定义语句)
+定义和管理数据对象，如数据库，数据表等
+创建数据库
+1CREATE DATABASE [IF NOT EXISTS] 数据库名；
+
+删除数据库
+1DROP DATABASE [IF EXISTS] 数据库名；
+
+查看数据库
+1SHOW DATABASE;
+
+使用数据库
+1USE 数据库名；
+
+创建数据表语句语法：
+123456CREATE TABLE [IF NOT EXI">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hibernate实体类属性应该使用int还是Integer">
-<meta property="og:url" content="http://yuzhiheng.me/2017/02/01/Hibernate实体类属性应该使用int还是Integer/index.html">
+<meta property="og:title" content="MySQL数据库（DDL）">
+<meta property="og:url" content="http://yuzhiheng.me/2017/01/09/MySQL数据库（DDL）/index.html">
 <meta property="og:site_name" content="YuZhiheng'Blog">
-<meta property="og:description" content="我们知道，hibernate并没有强制要求pojo（实体类 ）属性必须是基本数据类型或者是包装类，但是我们把属性声明为基本数据类型（ primitive types directly）或者包装类 （ wrapping classes for primitives）对我们代码的编写有着深远的影响。
-使用基本数据类型的好处(a)使用基本数据类型意味着你所定义的属性不允许为空，这样你在获取该属性的时候就">
-<meta property="og:updated_time" content="2017-02-01T05:15:01.000Z">
+<meta property="og:description" content="DDL(数据定义语句)
+定义和管理数据对象，如数据库，数据表等
+创建数据库
+1CREATE DATABASE [IF NOT EXISTS] 数据库名；
+
+删除数据库
+1DROP DATABASE [IF EXISTS] 数据库名；
+
+查看数据库
+1SHOW DATABASE;
+
+使用数据库
+1USE 数据库名；
+
+创建数据表语句语法：
+123456CREATE TABLE [IF NOT EXI">
+<meta property="og:updated_time" content="2017-02-24T14:15:03.234Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hibernate实体类属性应该使用int还是Integer">
-<meta name="twitter:description" content="我们知道，hibernate并没有强制要求pojo（实体类 ）属性必须是基本数据类型或者是包装类，但是我们把属性声明为基本数据类型（ primitive types directly）或者包装类 （ wrapping classes for primitives）对我们代码的编写有着深远的影响。
-使用基本数据类型的好处(a)使用基本数据类型意味着你所定义的属性不允许为空，这样你在获取该属性的时候就">
+<meta name="twitter:title" content="MySQL数据库（DDL）">
+<meta name="twitter:description" content="DDL(数据定义语句)
+定义和管理数据对象，如数据库，数据表等
+创建数据库
+1CREATE DATABASE [IF NOT EXISTS] 数据库名；
+
+删除数据库
+1DROP DATABASE [IF EXISTS] 数据库名；
+
+查看数据库
+1SHOW DATABASE;
+
+使用数据库
+1USE 数据库名；
+
+创建数据表语句语法：
+123456CREATE TABLE [IF NOT EXI">
 
 
 
@@ -124,13 +166,13 @@
 
 
 
-  <link rel="canonical" href="http://yuzhiheng.me/2017/02/01/Hibernate实体类属性应该使用int还是Integer/"/>
+  <link rel="canonical" href="http://yuzhiheng.me/2017/01/09/MySQL数据库（DDL）/"/>
 
 
 
 
 
-  <title> Hibernate实体类属性应该使用int还是Integer | YuZhiheng'Blog </title>
+  <title> MySQL数据库（DDL） | YuZhiheng'Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -261,7 +303,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yuzhiheng.me/2017/02/01/Hibernate实体类属性应该使用int还是Integer/">
+  <link itemprop="mainEntityOfPage" href="http://yuzhiheng.me/2017/01/09/MySQL数据库（DDL）/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Yu Zhiheng">
@@ -285,7 +327,7 @@
             
             
               
-                Hibernate实体类属性应该使用int还是Integer
+                MySQL数据库（DDL）
               
             
           </h1>
@@ -298,8 +340,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-01T12:21:21+08:00">
-                2017-02-01
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-09T15:27:26+08:00">
+                2017-01-09
               </time>
             
 
@@ -328,8 +370,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/技术/框架/" itemprop="url" rel="index">
-                    <span itemprop="name">框架</span>
+                  <a href="/categories/技术/关系型数据库/" itemprop="url" rel="index">
+                    <span itemprop="name">关系型数据库</span>
                   </a>
                 </span>
 
@@ -363,18 +405,43 @@
       
 
       
-        <p>我们知道，hibernate并没有强制要求pojo（实体类 ）属性必须是基本数据类型或者是包装类，但是我们把属性声明为基本数据类型（ primitive types directly）或者包装类 （ wrapping classes for primitives）对我们代码的编写有着深远的影响。</p>
-<h4 id="使用基本数据类型的好处"><a href="#使用基本数据类型的好处" class="headerlink" title="使用基本数据类型的好处"></a>使用基本数据类型的好处</h4><p>(a)使用基本数据类型意味着你所定义的属性不允许为空，这样你在获取该属性的时候就不可能会得到一个null值。<br>(b)int在java中占32/64 bits，而Integer占了16个字节，所以使用Integer在性能方面要比int差一些。</p>
-<h4 id="使用包装类的好处"><a href="#使用包装类的好处" class="headerlink" title="使用包装类的好处"></a>使用包装类的好处</h4><p>(a)当我们不想给这个属性设置任何值的时候，我们可以给它一个null值（前提是数据库的字段允许插入NULL）。<br>(b)我们可以在pojo类中使用验证注解对属性的值做校验（例如： javax.validation.constraints.NotNull)</p>
-<h4 id="hibernate官方推荐的做法"><a href="#hibernate官方推荐的做法" class="headerlink" title="hibernate官方推荐的做法"></a>hibernate官方推荐的做法</h4><p>下面引用自hibernate官方文档</p>
-<blockquote>
-<p>Cat has a property called id. This property maps to the primary key column(s) of a database table. The property might have been called anything, and its type might have been any primitive type, any primitive “wrapper” type, java.lang.String or java.util.Date.<br>…<br>We recommend that you declare consistently-named identifier properties on persistent classes and that you use a nullable (i.e., non-primitive) type.</p>
-</blockquote>
-<p>可以看出，hibernate是建议开发者使用包装类的。</p>
-<h4 id="两者在实际开发中的比较"><a href="#两者在实际开发中的比较" class="headerlink" title="两者在实际开发中的比较"></a>两者在实际开发中的比较</h4><p>(a)如果你的数据库字段是允许为空的，使用包装类。如果不允许为空，使用包装的时候，如果你往数据库插入null值，此时就会抛出异常。然后你就可以对异常进行捕获并处理。<br>(b)使用基本数据类型的时候，如果字段是NULL，那么JDBC会返回0，但是这里会有一个问题。有可能0在你的业务逻辑代表着特定含义，这时候就可能出现一些意想不到的后果。</p>
-<p>总结：在项目中去使用包装类型而不是基本数据类型，这样可以使你编写代码更简单，除非有人给你一个更好的理由去使用基本数据类型或者你的上头要求一定要使用基本数据类型。</p>
-<p><a href="http://www.linuxidc.com/Linux/2016-04/130804.htm" target="_blank" rel="external">原文地址</a></p>
-
+        <h3 id="DDL-数据定义语句"><a href="#DDL-数据定义语句" class="headerlink" title="DDL(数据定义语句)"></a>DDL(数据定义语句)</h3><ul>
+<li>定义和管理数据对象，如数据库，数据表等</li>
+<li><p>创建数据库</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">CREATE</span> <span class="keyword">DATABASE</span> [<span class="keyword">IF</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span>] 数据库名；</div></pre></td></tr></table></figure>
+</li>
+<li><p>删除数据库</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">DROP</span> <span class="keyword">DATABASE</span> [<span class="keyword">IF</span> <span class="keyword">EXISTS</span>] 数据库名；</div></pre></td></tr></table></figure>
+</li>
+<li><p>查看数据库</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">SHOW</span> <span class="keyword">DATABASE</span>;</div></pre></td></tr></table></figure>
+</li>
+<li><p>使用数据库</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">USE</span> 数据库名；</div></pre></td></tr></table></figure>
+</li>
+<li><p>创建数据表语句<br>语法：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> [<span class="keyword">IF</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span>] <span class="string">`表名`</span> (</div><div class="line">	<span class="string">`字段名1`</span> 列类型[属性][索引][注释],</div><div class="line">	<span class="string">`字段名2`</span> 列类型[属性][索引][注释],</div><div class="line">	......</div><div class="line">	<span class="string">`字段名n`</span> 列类型[属性][索引][注释],</div><div class="line">)[表类型][表字符集][注释];</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>说明：方向引号用于区别MySQL保留字与普通字符而引用的。</p>
+<h4 id="列类型"><a href="#列类型" class="headerlink" title="列类型"></a>列类型</h4><ul>
+<li>规定数据库中改列存放的数据类型</li>
+<li>分为：数值类型、字符串类型、日期和时间型数值类型、NULL值 。</li>
+<li>数值类型<table><tr><th>类型</th><th>说明</th><th>取值范围</th><th>存储需求</th></tr><tr><td>tinyint</td><td>非常小的数据</td><td>有符值：-2^7~2^7-1 无符号值：0~2^8-1</td><td>1字节</td></tr><tr><td>smallint</td><td>较小的数据</td><td>有符值：-2^15~2^15-1 无符号值：0~2^16-1</td><td>2字节</td></tr><tr><td>mediumint</td><td>中等大小的数据</td><td>有符值：-2^23~2^23-1 无符号值：0~2^24-1</td><td>3字节</td></tr><tr><td>int</td><td>标准整数</td><td>有符值：-2^31~2^31-1 无符号值：0~2^32-1</td><td>4字节</td></tr><tr><td>bigint</td><td>较大的整数</td><td>有符值：-2^63~2^63-1 无符号值：0~2^64-1</td><td>8字节</td></tr><tr><td>float</td><td>单精度浮点数</td><td>±1.754351e -38</td><td>4字节</td></tr><tr><td>double</td><td>双精度浮点数</td><td>±2.2250738585072014e -308</td><td>8字节</td></tr><tr><td>decimal</td><td>字符串形式的浮点数</td><td>Decimal(M,D)</td><td>M个字节</td></tr></table></li>
+<li>字符串类型<table><tr><th>类型</th><th>说明</th><th>最大长度</th></tr><tr><td>char[(M)]</td><td>固定长字符串，检索快但费空间0&lt;=M&lt;=255</td><td>M字节</td></tr><tr><td>varchar[(M)]</td><td>可变字符串0&lt;=M&lt;=65535</td><td>M+1字节</td></tr><tr><td>tinytext</td><td>微型文本串</td><td>2^8-1字节</td></tr><tr><td>text</td><td>文本串</td><td>2^16-1字节</td></tr></table></li>
+<li>日期和时间型数值类型<table><tr><th>DATE</th><th>YYYY-MM-DD,日期格式</th><th>1000-01-01~9999-12-31</th></tr><tr><td>TIME</td><td>Hh:mm:ss,时间格式</td><td>-838:59:59~838:59:59</td></tr><tr><td>DATETIME</td><td>YY-MM-DD hh:mm:ss</td><td>1000-01-01 00:00:00 至 9999-12-31 23:59:59</td></tr><tr><td>TIMESTAMP</td><td>YYYYMMDDhhmmss格式表示的时间戳</td><td>197010101000000~2037年的某个时刻</td></tr><tr><td>YEAR</td><td>YYYY格式的年份值</td><td>1901~2155</td></tr></table></li>
+<li>NULL值<br>理解为”没有值“或”未知值“；<br>不要用NULL进行算术运算，结果仍为NULL；<br>MySQL中，0或NULL都意味着为假，1为真。</li>
+</ul>
+<h4 id="列的属性"><a href="#列的属性" class="headerlink" title="列的属性"></a>列的属性</h4><ul>
+<li>UNSIGNED<br>无符号的<br>声明改数据列不允许负数</li>
+<li>ZEROFILL<br>0填充的<br>不足位数的用0来填充，如int(3),5则为005</li>
+<li>AUTO_INCREMENT<br>自增的<br>通常用于设置主键，且为整数类型<br>每添加一条数据，自动在上一个记录数上加1<br>可定义起始值</li>
+<li>NULL和NOT NULL<br>默认为NULl，即没有插入该列的数值<br>如果设置为NOT NULL,则该列必须有值</li>
+<li>DEFAULT<br>默认的<br>用于设置默认值<br>例如：性别字段，默认为“男”，否则为“女”；若无指定该列的指，则默认为“男”的值</li>
+<li>其他<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*主键五个五个增长*/</span></div><div class="line"><span class="keyword">SET</span> @@auto_increment_increment=<span class="number">5</span>;</div><div class="line"><span class="comment">/*删除T#列表的内容*/</span></div><div class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> T3;</div><div class="line"><span class="comment">/*截断表，删除自增，让它重头开始数*/</span></div><div class="line"><span class="keyword">TRUNCATE</span> T3;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="数据字段注释"><a href="#数据字段注释" class="headerlink" title="数据字段注释"></a>数据字段注释</h4>
       
     </div>
 
@@ -397,7 +464,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Hibernate/" rel="tag"># Hibernate</a>
+            <a href="/tags/MySql/" rel="tag"># MySql</a>
           
         </div>
       
@@ -406,8 +473,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/02/01/Java基本数据类型/" rel="next" title="Java基本数据类型">
-                <i class="fa fa-chevron-left"></i> Java基本数据类型
+              <a href="/2016/12/23/Windows环境下使用Hexo+GitHub搭建个人博客/" rel="next" title="Windows环境下使用Hexo+GitHub搭建个人博客">
+                <i class="fa fa-chevron-left"></i> Windows环境下使用Hexo+GitHub搭建个人博客
               </a>
             
           </div>
@@ -415,6 +482,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/01/09/Hibernate框架（基础环境搭建与操作）/" rel="prev" title="Hibernate框架（基础环境搭建与操作）">
+                Hibernate框架（基础环境搭建与操作） <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -554,7 +625,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#使用基本数据类型的好处"><span class="nav-number">1.</span> <span class="nav-text">使用基本数据类型的好处</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用包装类的好处"><span class="nav-number">2.</span> <span class="nav-text">使用包装类的好处</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hibernate官方推荐的做法"><span class="nav-number">3.</span> <span class="nav-text">hibernate官方推荐的做法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#两者在实际开发中的比较"><span class="nav-number">4.</span> <span class="nav-text">两者在实际开发中的比较</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#DDL-数据定义语句"><span class="nav-number">1.</span> <span class="nav-text">DDL(数据定义语句)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#列类型"><span class="nav-number">1.1.</span> <span class="nav-text">列类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#列的属性"><span class="nav-number">1.2.</span> <span class="nav-text">列的属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据字段注释"><span class="nav-number">1.3.</span> <span class="nav-text">数据字段注释</span></a></li></ol></li></ol></div>
             
 
           </div>
