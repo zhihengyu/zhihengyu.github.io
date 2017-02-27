@@ -122,7 +122,7 @@
 1git commit -m &amp;quot;写注释说明这一步做了什么&amp;quot;
 
 添加远程库地址到本地库(origin代表你给远程库起的">
-<meta property="og:updated_time" content="2017-02-27T09:14:10.694Z">
+<meta property="og:updated_time" content="2017-02-27T09:15:04.346Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git使用总结">
 <meta name="twitter:description" content="Git常用命令搭建环境常用命令
@@ -430,13 +430,8 @@
 <li><p><strong>查看本地库存储有哪些远程库地址</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote -v</div></pre></td></tr></table></figure>
 </li>
-<li><p><strong>生成ssh密匙*</strong> Windows：<br>右键鼠标，点击Git Bash<br>输入 ssh-keygen -t rsa -C ‘$your_email’,一直按enter<br>注意id-rsa.pud的保存路径，在文件夹下打开，把里面的内容拷贝到GitHib sshkey设置里</p>
+<li><p><strong>生成ssh密匙</strong><br>Windows:<br>右键鼠标，点击Git Bash<br>输入 ssh-keygen -t rsa -C ‘$your_email’,一直按enter<br>注意id-rsa.pud的保存路径，在文件夹下打开，把里面的内容拷贝到GitHib sshkey设置里<br>Mac:<br>打开终端，输入ssh-keygen -t rsa -C ‘$your_email’<br>输入 cat~/.ssh/id_rsa.pub<br>把公钥的内容拷贝到gitHib sshkey</p>
 </li>
-</ol>
-<ul>
-<li>Mac<br>打开终端，输入ssh-keygen -t rsa -C ‘$your_email’<br>输入 cat~/.ssh/id_rsa.pub<br>把公钥的内容拷贝到gitHib sshkey</li>
-</ul>
-<ol>
 <li><p><strong>将代码推送到远程库，master是主线</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push -u origin master</div></pre></td></tr></table></figure>
 </li>
