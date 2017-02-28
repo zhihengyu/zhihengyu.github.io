@@ -104,7 +104,7 @@ INSERT(添加数据语句)
 1INSERT INTO 表名[(字段1,字段2,字段3...)] VALUES(&quot;值1&quot;,&quot;值2&quot;,&quot;值3&quot;...)
 
 注意字段或值之间用英文逗号隔开“字段1，字段2…”该部分省略，但添加的值务必与表结构数据列顺序相对应，且数量一致与表结构数据列顺序相对应，且数量一致可同时插入多条数据，values">
-<meta property="og:updated_time" content="2017-02-28T14:13:11.255Z">
+<meta property="og:updated_time" content="2017-02-28T14:18:25.254Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MySQL数据库（DML）">
 <meta name="twitter:description" content="DML(数据操作语句)
@@ -403,7 +403,75 @@ INSERT(添加数据语句)
 </ul>
 <h4 id="WHERER条件子句"><a href="#WHERER条件子句" class="headerlink" title="WHERER条件子句"></a>WHERER条件子句</h4><ul>
 <li>有条件性的从表中选取数据，筛选数据</li>
-<li>WHERE中的运算符<br>|运算符 |含义 |范例 |结果 |<br>|——–|———|——-|——-|<br>|= |等于 |5=6 | false|<br>|&lt;&gt;或！= |不等于 |5!=6 |true |<br>|&gt; |大于 |5&gt;6 |false |<br>|&lt; |小于 |5<6 |true="" |="">= |大于等于 |5&gt;=6 |false |<br>|&lt;= |小于等于 |5&lt;=6 |true |<br>|BETWEEN |在某个范围之间 |BETWEEN 5 AND 10 |true |<br>|AND |并且 |5&gt;1 AND 1&gt;2 |false |<br>|OR |或 |5&gt;1 OR 1&gt;2 |true |</6></li>
+<li>WHERE中的运算符</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>含义</th>
+<th>范例</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>=</td>
+<td>等于</td>
+<td>5=6</td>
+<td>false</td>
+</tr>
+<tr>
+<td>&lt;&gt;或！=</td>
+<td>不等于</td>
+<td>5!=6</td>
+<td>true</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>大于</td>
+<td>5&gt;6</td>
+<td>false</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>小于</td>
+<td>5&lt;6</td>
+<td>true</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>大于等于</td>
+<td>5&gt;=6</td>
+<td>false</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>小于等于</td>
+<td>5&lt;=6</td>
+<td>true</td>
+</tr>
+<tr>
+<td>BETWEEN</td>
+<td>在某个范围之间</td>
+<td>BETWEEN 5 AND 10</td>
+<td>true</td>
+</tr>
+<tr>
+<td>AND</td>
+<td>并且</td>
+<td>5&gt;1 AND 1&gt;2</td>
+<td>false</td>
+</tr>
+<tr>
+<td>OR</td>
+<td>或</td>
+<td>5&gt;1 OR 1&gt;2</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+<ul>
 <li>例：<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">UPDATE</span> school <span class="keyword">SET</span> <span class="string">`name`</span>=<span class="string">"赵四"</span> <span class="keyword">WHERE</span> <span class="string">`age`</span>&gt;<span class="number">10</span> <span class="keyword">OR</span> <span class="string">`id`</span>&gt;<span class="number">7</span>;</div></pre></td></tr></table></figure>
 </li>
 </ul>
