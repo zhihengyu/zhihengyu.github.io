@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Linux," />
+  <meta name="keywords" content="MySql," />
 
 
 
@@ -84,19 +84,37 @@
 
 
 
-<meta name="description" content="Linux简介Unix的一个变种，类Unix(Unix Like)的操作系统；内核源代码开放，1991年由 林纳斯-托瓦兹 编写； 基本思想：一切都是文件（命令、硬件设备、进程对于内核来说都是文件）。常用发行版本：RedHat（商业版）、CentOS（社区版）、Ubuntu（以桌面应用为主）；
-基本操作123456789101112131415161718192021222324252627282">
+<meta name="description" content="DML(数据操作语句)
+用于操作数据库对象中所包含的数据
+
+INSERT(添加数据语句)
+语法：
+1INSERT INTO 表名[(字段1,字段2,字段3...)] VALUES(&quot;值1&quot;,&quot;值2&quot;,&quot;值3&quot;...)
+
+注意字段或值之间用英文逗号隔开“字段1，字段2…”该部分省略，但添加的值务必与表结构数据列顺序相对应，且数量一致与表结构数据列顺序相对应，且数量一致可同时插入多条数据，values">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux常用命令">
-<meta property="og:url" content="http://yuzhiheng.me/2017/01/08/Linux常用命令/index.html">
+<meta property="og:title" content="MySQL数据库（DML）">
+<meta property="og:url" content="http://yuzhiheng.me/2016/12/25/MySQL数据库（DML）/index.html">
 <meta property="og:site_name" content="YuZhiheng'Blog">
-<meta property="og:description" content="Linux简介Unix的一个变种，类Unix(Unix Like)的操作系统；内核源代码开放，1991年由 林纳斯-托瓦兹 编写； 基本思想：一切都是文件（命令、硬件设备、进程对于内核来说都是文件）。常用发行版本：RedHat（商业版）、CentOS（社区版）、Ubuntu（以桌面应用为主）；
-基本操作123456789101112131415161718192021222324252627282">
-<meta property="og:updated_time" content="2017-02-25T14:57:27.346Z">
+<meta property="og:description" content="DML(数据操作语句)
+用于操作数据库对象中所包含的数据
+
+INSERT(添加数据语句)
+语法：
+1INSERT INTO 表名[(字段1,字段2,字段3...)] VALUES(&quot;值1&quot;,&quot;值2&quot;,&quot;值3&quot;...)
+
+注意字段或值之间用英文逗号隔开“字段1，字段2…”该部分省略，但添加的值务必与表结构数据列顺序相对应，且数量一致与表结构数据列顺序相对应，且数量一致可同时插入多条数据，values">
+<meta property="og:updated_time" content="2017-02-28T14:13:11.255Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux常用命令">
-<meta name="twitter:description" content="Linux简介Unix的一个变种，类Unix(Unix Like)的操作系统；内核源代码开放，1991年由 林纳斯-托瓦兹 编写； 基本思想：一切都是文件（命令、硬件设备、进程对于内核来说都是文件）。常用发行版本：RedHat（商业版）、CentOS（社区版）、Ubuntu（以桌面应用为主）；
-基本操作123456789101112131415161718192021222324252627282">
+<meta name="twitter:title" content="MySQL数据库（DML）">
+<meta name="twitter:description" content="DML(数据操作语句)
+用于操作数据库对象中所包含的数据
+
+INSERT(添加数据语句)
+语法：
+1INSERT INTO 表名[(字段1,字段2,字段3...)] VALUES(&quot;值1&quot;,&quot;值2&quot;,&quot;值3&quot;...)
+
+注意字段或值之间用英文逗号隔开“字段1，字段2…”该部分省略，但添加的值务必与表结构数据列顺序相对应，且数量一致与表结构数据列顺序相对应，且数量一致可同时插入多条数据，values">
 
 
 
@@ -124,13 +142,13 @@
 
 
 
-  <link rel="canonical" href="http://yuzhiheng.me/2017/01/08/Linux常用命令/"/>
+  <link rel="canonical" href="http://yuzhiheng.me/2016/12/25/MySQL数据库（DML）/"/>
 
 
 
 
 
-  <title> Linux常用命令 | YuZhiheng'Blog </title>
+  <title> MySQL数据库（DML） | YuZhiheng'Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -261,7 +279,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yuzhiheng.me/2017/01/08/Linux常用命令/">
+  <link itemprop="mainEntityOfPage" href="http://yuzhiheng.me/2016/12/25/MySQL数据库（DML）/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Yu Zhiheng">
@@ -285,7 +303,7 @@
             
             
               
-                Linux常用命令
+                MySQL数据库（DML）
               
             
           </h1>
@@ -298,8 +316,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-08T19:34:45+08:00">
-                2017-01-08
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-25T16:40:45+08:00">
+                2016-12-25
               </time>
             
 
@@ -328,8 +346,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/技术/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
+                  <a href="/categories/技术/关系型数据库/" itemprop="url" rel="index">
+                    <span itemprop="name">关系型数据库</span>
                   </a>
                 </span>
 
@@ -363,8 +381,44 @@
       
 
       
-        <h3 id="Linux简介"><a href="#Linux简介" class="headerlink" title="Linux简介"></a>Linux简介</h3><p>Unix的一个变种，类Unix(Unix Like)的操作系统；内核源代码开放，1991年由 林纳斯-托瓦兹 编写； 基本思想：一切都是文件（命令、硬件设备、进程对于内核来说都是文件）。常用发行版本：RedHat（商业版）、CentOS（社区版）、Ubuntu（以桌面应用为主）；</p>
-<h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div></pre></td><td class="code"><pre><div class="line">//切换root用户</div><div class="line">su root</div><div class="line">//查看启用状态下网卡ip</div><div class="line">ifconfig</div><div class="line">//查看所有网卡ip</div><div class="line">ifconfig -a</div><div class="line">//禁用网卡</div><div class="line">ifconfig 网卡名 down</div><div class="line">//启用网卡</div><div class="line">ifconfig 网卡名 up</div><div class="line">//网卡自动获取ip</div><div class="line">dhclient 网卡名</div><div class="line">//查看ssh进程pid(重要)</div><div class="line">ps -ef|grep sshd</div><div class="line">//绝杀进程</div><div class="line">kill -9 pid(进程id)</div><div class="line">//启用ssh服务</div><div class="line">service sshd start</div><div class="line">//关闭ssh服务</div><div class="line">service sshd stop</div><div class="line">//重启ssh</div><div class="line">service sshd restart</div><div class="line">//清屏</div><div class="line">clear</div><div class="line">//挂载(磁盘中的文件位置+新建文件夹位置)</div><div class="line">mount /dev/cdrom /mnt/cdrom</div><div class="line">//取消挂载</div><div class="line">umount /mnt/cdrom</div><div class="line"></div><div class="line"></div><div class="line">//查看当前目录下的文件及文件夹</div><div class="line">ls</div><div class="line">//查看当前目录下的所有文件，包含隐藏文件</div><div class="line">ls -a</div><div class="line">//查看当前目录下文件的详细信息</div><div class="line">ls -l </div><div class="line">//返回根目录</div><div class="line">cd /</div><div class="line">//返回上一级</div><div class="line">cd ..</div><div class="line">//进入某个文件 </div><div class="line">cd user(相对路径)</div><div class="line">cd /user(加斜杠为绝对路径)</div><div class="line">//以列表形式查看当前目录下的所有文件</div><div class="line">ls -la</div><div class="line">//查看当前目录</div><div class="line">pwd </div><div class="line">//查看某个命令的详细描述</div><div class="line">man pwd(命令名)</div><div class="line"></div><div class="line"></div><div class="line">//建立空文件夹</div><div class="line">mkdir test(文件名)</div><div class="line">//新建多层文件夹</div><div class="line">mkdir -p soft/tomcate(可使用绝对或相对路径)</div><div class="line">//删除目录</div><div class="line">rmdir test</div><div class="line">//删除多层目录</div><div class="line">rmdir -r test</div><div class="line">//不带提示删除多层目录</div><div class="line">rmdir -rf test </div><div class="line">//查找文件</div><div class="line">whereis pwd(文件名 )</div><div class="line">//创建文件</div><div class="line">touch /test/abc.txt(绝对或相对路径)</div><div class="line">//查看小文件</div><div class="line">cat abc.txt</div><div class="line">//查看大文件</div><div class="line">tail -10 server.xml(查看后十行)</div><div class="line">head -10 server.xml(查看前十行)</div><div class="line">more  server.xml(分页查看)</div><div class="line">q(退出)</div><div class="line">tail -f server.xml(查看日志,当日志更新时会自动滚动)</div><div class="line"></div><div class="line"></div><div class="line">//编辑文件(三种模式：命令工作模式、编辑工作模式、底行模式)</div><div class="line">vi abc.txt</div><div class="line">进入编辑模式：i/o/a       </div><div class="line">退出到命令模式：esc</div><div class="line">进入底行模式：  </div><div class="line">	保存退出 :wq     </div><div class="line">	退出不保存 :q!   </div><div class="line">	替换内容 :%s/被替换/替换/g </div><div class="line">	显示行号 :set nu       </div><div class="line">	全局修改显示行号  /etc/virc vi的配置文件，最后加上 :set nu </div><div class="line">//文件重命名</div><div class="line">mv 旧名字.txt 新名字.txt    </div><div class="line">//拷贝文件</div><div class="line">cp -fr 原始文件路径 要拷贝到的文件路径</div></pre></td></tr></table></figure>
+        <h3 id="DML-数据操作语句"><a href="#DML-数据操作语句" class="headerlink" title="DML(数据操作语句)"></a>DML(数据操作语句)</h3><ul>
+<li>用于操作数据库对象中所包含的数据</li>
+</ul>
+<h4 id="INSERT-添加数据语句"><a href="#INSERT-添加数据语句" class="headerlink" title="INSERT(添加数据语句)"></a>INSERT(添加数据语句)</h4><ul>
+<li><p>语法：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> 表名[(字段<span class="number">1</span>,字段<span class="number">2</span>,字段<span class="number">3.</span>..)] <span class="keyword">VALUES</span>(<span class="string">"值1"</span>,<span class="string">"值2"</span>,<span class="string">"值3"</span>...)</div></pre></td></tr></table></figure>
+</li>
+<li><p>注意<br>字段或值之间用英文逗号隔开<br>“字段1，字段2…”该部分省略，但添加的值务必与表结构数据列顺序相对应，且数量一致<br>与表结构数据列顺序相对应，且数量一致<br>可同时插入多条数据，values后用英文逗号隔开，结尾用分号</p>
+</li>
+<li>三种写法<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> school <span class="keyword">VALUES</span>(<span class="string">"NULL"</span>,<span class="string">"sam"</span>,<span class="string">"17"</span>);</div><div class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> school (<span class="string">`id`</span>,<span class="string">`name`</span>,<span class="string">`age`</span>)<span class="keyword">VALUES</span>(<span class="string">"NULL"</span>,<span class="string">"tom"</span>,<span class="string">"18"</span>);</div><div class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> school (<span class="string">`id`</span>,<span class="string">`name`</span>,<span class="string">`age`</span>)<span class="keyword">VALUES</span>(<span class="string">"NULL"</span>,<span class="string">"jack"</span>,<span class="string">"16"</span>),(<span class="string">"NULL"</span>,<span class="string">"rose"</span>,<span class="string">"16"</span>);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="UPDATE-更新数据语句"><a href="#UPDATE-更新数据语句" class="headerlink" title="UPDATE(更新数据语句)"></a>UPDATE(更新数据语句)</h4><ul>
+<li><p>语法：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">UPDATE</span> 表名 <span class="keyword">SET</span> column_name=<span class="keyword">value</span>[,column_name2=value2,...] [<span class="keyword">where</span> condition];</div></pre></td></tr></table></figure>
+</li>
+<li><p>注意<br>column_name 为更改的数据列<br>value为修改的数据，可以为变量、具体值、表达式或者嵌套的SELETE结果<br>condition为筛选条件，如不指定则修改该表的所有列数据<br>三种方法</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*1.普通*/</span></div><div class="line"><span class="keyword">UPDATE</span> school <span class="keyword">SET</span> <span class="string">`name`</span>=<span class="string">"张三"</span>,<span class="string">`age`</span>=<span class="number">20</span>;</div><div class="line"><span class="comment">/*2.自加*/</span></div><div class="line"><span class="keyword">UPDATE</span> school <span class="keyword">SET</span> <span class="string">`age`</span>=<span class="string">`age`</span>+<span class="number">10</span>;</div><div class="line"><span class="comment">/*3.字符串拼接*/</span></div><div class="line"><span class="keyword">UPDATE</span> school <span class="keyword">SET</span> <span class="string">`name`</span>=<span class="keyword">CONCAT</span>(<span class="string">"姓名是"</span>,<span class="string">`name`</span>);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="WHERER条件子句"><a href="#WHERER条件子句" class="headerlink" title="WHERER条件子句"></a>WHERER条件子句</h4><ul>
+<li>有条件性的从表中选取数据，筛选数据</li>
+<li>WHERE中的运算符<br>|运算符 |含义 |范例 |结果 |<br>|——–|———|——-|——-|<br>|= |等于 |5=6 | false|<br>|&lt;&gt;或！= |不等于 |5!=6 |true |<br>|&gt; |大于 |5&gt;6 |false |<br>|&lt; |小于 |5<6 |true="" |="">= |大于等于 |5&gt;=6 |false |<br>|&lt;= |小于等于 |5&lt;=6 |true |<br>|BETWEEN |在某个范围之间 |BETWEEN 5 AND 10 |true |<br>|AND |并且 |5&gt;1 AND 1&gt;2 |false |<br>|OR |或 |5&gt;1 OR 1&gt;2 |true |</6></li>
+<li>例：<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">UPDATE</span> school <span class="keyword">SET</span> <span class="string">`name`</span>=<span class="string">"赵四"</span> <span class="keyword">WHERE</span> <span class="string">`age`</span>&gt;<span class="number">10</span> <span class="keyword">OR</span> <span class="string">`id`</span>&gt;<span class="number">7</span>;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="DELETE-删除数据语句"><a href="#DELETE-删除数据语句" class="headerlink" title="DELETE(删除数据语句)"></a>DELETE(删除数据语句)</h4><ul>
+<li><p>语法：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">DELETE</span> <span class="keyword">FORM</span> 表名 [<span class="keyword">WHERE</span> condition];</div></pre></td></tr></table></figure>
+</li>
+<li><p>注意：condition为筛选条件，如不指定则删除该表的所有列数据</p>
+</li>
+<li><p><strong>TRUNCATE命令</strong><br>用于完全清空表数据，但表结构、索引、约束等不变<br>语法：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">TRUNCATE</span> [<span class="keyword">TABLE</span>] table_name</div></pre></td></tr></table></figure>
+</li>
+<li><p>TRUNCATE区别于DELETE命令<br>相同：都能删除数据、不删除表结构，但TRUNCATE速度更快<br>不相同：使用TRUNCATE TABLE重新设置AUTO_INCREMENT计数器，并且不会对事务有影响</p>
+</li>
+</ul>
 
       
     </div>
@@ -388,7 +442,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Linux/" rel="tag"># Linux</a>
+            <a href="/tags/MySql/" rel="tag"># MySql</a>
           
         </div>
       
@@ -397,8 +451,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/12/25/MySQL数据库（DDL）/" rel="next" title="MySQL数据库（DDL）">
-                <i class="fa fa-chevron-left"></i> MySQL数据库（DDL）
+              <a href="/2016/12/17/Windows环境下使用Hexo+GitHub搭建个人博客/" rel="next" title="Windows环境下使用Hexo+GitHub搭建个人博客">
+                <i class="fa fa-chevron-left"></i> Windows环境下使用Hexo+GitHub搭建个人博客
               </a>
             
           </div>
@@ -407,8 +461,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/01/09/Hibernate框架（HQL查询语句）/" rel="prev" title="Hibernate框架（HQL查询语句）">
-                Hibernate框架（HQL查询语句） <i class="fa fa-chevron-right"></i>
+              <a href="/2016/12/25/MySQL数据库（DDL）/" rel="prev" title="MySQL数据库（DDL）">
+                MySQL数据库（DDL） <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -549,7 +603,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux简介"><span class="nav-number">1.</span> <span class="nav-text">Linux简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本操作"><span class="nav-number">2.</span> <span class="nav-text">基本操作</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#DML-数据操作语句"><span class="nav-number">1.</span> <span class="nav-text">DML(数据操作语句)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#INSERT-添加数据语句"><span class="nav-number">1.1.</span> <span class="nav-text">INSERT(添加数据语句)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#UPDATE-更新数据语句"><span class="nav-number">1.2.</span> <span class="nav-text">UPDATE(更新数据语句)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#WHERER条件子句"><span class="nav-number">1.3.</span> <span class="nav-text">WHERER条件子句</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DELETE-删除数据语句"><span class="nav-number">1.4.</span> <span class="nav-text">DELETE(删除数据语句)</span></a></li></ol></li></ol></div>
             
 
           </div>
