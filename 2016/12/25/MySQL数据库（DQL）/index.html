@@ -102,7 +102,7 @@
 使用频率最高的语句
 语法
 123456789SELECT [ALL | DISTINCT]&amp;#123;*|table.*|[table.field1[as alias1][,table.field2[as alias2]][,...]]&amp;#125;FROM table_name [a">
-<meta property="og:updated_time" content="2017-03-01T13:52:17.593Z">
+<meta property="og:updated_time" content="2017-03-01T14:03:09.510Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MySQL数据库（DQL）">
 <meta name="twitter:description" content="DQL(数据查询语句)
@@ -437,8 +437,54 @@
 </tr>
 <tr>
 <td>OR或&#124;&#124;</td>
-<td>a</td>
-<td>$8</td>
+<td>aORb 或 a&#124;&#124;b</td>
+<td>逻辑或，只要一个为真，则结果为真</td>
+</tr>
+<tr>
+<td>XOR或^</td>
+<td>a XOR b</td>
+<td>逻辑异或，不同为真，相同为假</td>
+</tr>
+<tr>
+<td>NOT或！</td>
+<td>NOT a 或！a</td>
+<td>逻辑非，若操作数为假，结果则为真</td>
+</tr>
+</tbody>
+</table>
+<h5 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h5><table>
+<thead>
+<tr>
+<th>操作符名称</th>
+<th>语法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IS NULL</td>
+<td>a IS NULL</td>
+<td>若操作符为NULL,则结果为真</td>
+</tr>
+<tr>
+<td>IS NOT NULL</td>
+<td>a IS NOT NULL</td>
+<td>若操作符不为NULL,则结果为真</td>
+</tr>
+<tr>
+<td>BETWEEN</td>
+<td>a BETWEEN b AND c</td>
+<td>若a范围在b与c之间则结果为真</td>
+</tr>
+<tr>
+<td>LIKE</td>
+<td>a LIKE b</td>
+<td>SQL模式匹配，若a匹配b，则结果为真</td>
+</tr>
+<tr>
+<td>IN</td>
+<td>a IN (a1,a2,a3,..)</td>
+<td>若a等于a1,a2…中的某一个，则结果为真</td>
 </tr>
 </tbody>
 </table>
@@ -626,7 +672,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#DQL-数据查询语句"><span class="nav-number">1.</span> <span class="nav-text">DQL(数据查询语句)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#AS子句作为别名"><span class="nav-number">1.1.</span> <span class="nav-text">AS子句作为别名</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DISTINCT关键字的使用"><span class="nav-number">1.2.</span> <span class="nav-text">DISTINCT关键字的使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#表达式的使用"><span class="nav-number">1.3.</span> <span class="nav-text">表达式的使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#WHERE条件语句"><span class="nav-number">1.4.</span> <span class="nav-text">WHERE条件语句</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#逻辑运算符"><span class="nav-number">1.4.1.</span> <span class="nav-text">逻辑运算符</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#连接查询"><span class="nav-number">1.5.</span> <span class="nav-text">连接查询</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ORDER-BY排序"><span class="nav-number">1.6.</span> <span class="nav-text">ORDER BY排序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#LIMIT分页查询"><span class="nav-number">1.7.</span> <span class="nav-text">LIMIT分页查询</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#子查询"><span class="nav-number">1.8.</span> <span class="nav-text">子查询</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常用统计函数-聚合函数"><span class="nav-number">1.9.</span> <span class="nav-text">常用统计函数(聚合函数)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#GROUP-BY分组"><span class="nav-number">1.10.</span> <span class="nav-text">GROUP BY分组</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#DQL-数据查询语句"><span class="nav-number">1.</span> <span class="nav-text">DQL(数据查询语句)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#AS子句作为别名"><span class="nav-number">1.1.</span> <span class="nav-text">AS子句作为别名</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DISTINCT关键字的使用"><span class="nav-number">1.2.</span> <span class="nav-text">DISTINCT关键字的使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#表达式的使用"><span class="nav-number">1.3.</span> <span class="nav-text">表达式的使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#WHERE条件语句"><span class="nav-number">1.4.</span> <span class="nav-text">WHERE条件语句</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#逻辑运算符"><span class="nav-number">1.4.1.</span> <span class="nav-text">逻辑运算符</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#比较运算符"><span class="nav-number">1.4.2.</span> <span class="nav-text">比较运算符</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#连接查询"><span class="nav-number">1.5.</span> <span class="nav-text">连接查询</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ORDER-BY排序"><span class="nav-number">1.6.</span> <span class="nav-text">ORDER BY排序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#LIMIT分页查询"><span class="nav-number">1.7.</span> <span class="nav-text">LIMIT分页查询</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#子查询"><span class="nav-number">1.8.</span> <span class="nav-text">子查询</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常用统计函数-聚合函数"><span class="nav-number">1.9.</span> <span class="nav-text">常用统计函数(聚合函数)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#GROUP-BY分组"><span class="nav-number">1.10.</span> <span class="nav-text">GROUP BY分组</span></a></li></ol></li></ol></div>
             
 
           </div>
