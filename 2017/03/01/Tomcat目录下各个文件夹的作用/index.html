@@ -84,19 +84,25 @@
 
 
 
-<meta name="description" content="bin目录主要是用来存放tomcat的命令，主要有两大类，一类是以.sh结尾的（linux命令），另一类是以.bat结尾的（windows命令）。重要：很多环境变量的设置都在此处，例如可以设置JDK路径、TOMCAT路径startup 用来启动tomcatshutdown 用来关闭tomcat修改catalina可以设置tomcat的内存
-conf目录主要是用来存放tomcat的一些配置文件。重">
+<meta name="description" content="bin目录
+主要是用来存放tomcat的命令，主要有两大类，一类是以.sh结尾的（linux命令），另一类是以.bat结尾的（windows命令）。
+主要：很多环境变量的设置都在此处，例如可以设置JDK路径、TOMCAT路径startup 用来启动tomcatshutdown 用来关闭tomcat修改catalina可以设置tomcat的内存conf目录
+server.xml可以设置端口号、设置域">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Tomcat目录下的各个文件夹的作用">
 <meta property="og:url" content="http://yuzhiheng.me/2017/03/01/Tomcat目录下各个文件夹的作用/index.html">
 <meta property="og:site_name" content="YuZhiheng'Blog">
-<meta property="og:description" content="bin目录主要是用来存放tomcat的命令，主要有两大类，一类是以.sh结尾的（linux命令），另一类是以.bat结尾的（windows命令）。重要：很多环境变量的设置都在此处，例如可以设置JDK路径、TOMCAT路径startup 用来启动tomcatshutdown 用来关闭tomcat修改catalina可以设置tomcat的内存
-conf目录主要是用来存放tomcat的一些配置文件。重">
-<meta property="og:updated_time" content="2017-03-01T12:36:16.767Z">
+<meta property="og:description" content="bin目录
+主要是用来存放tomcat的命令，主要有两大类，一类是以.sh结尾的（linux命令），另一类是以.bat结尾的（windows命令）。
+主要：很多环境变量的设置都在此处，例如可以设置JDK路径、TOMCAT路径startup 用来启动tomcatshutdown 用来关闭tomcat修改catalina可以设置tomcat的内存conf目录
+server.xml可以设置端口号、设置域">
+<meta property="og:updated_time" content="2017-03-01T12:42:25.756Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Tomcat目录下的各个文件夹的作用">
-<meta name="twitter:description" content="bin目录主要是用来存放tomcat的命令，主要有两大类，一类是以.sh结尾的（linux命令），另一类是以.bat结尾的（windows命令）。重要：很多环境变量的设置都在此处，例如可以设置JDK路径、TOMCAT路径startup 用来启动tomcatshutdown 用来关闭tomcat修改catalina可以设置tomcat的内存
-conf目录主要是用来存放tomcat的一些配置文件。重">
+<meta name="twitter:description" content="bin目录
+主要是用来存放tomcat的命令，主要有两大类，一类是以.sh结尾的（linux命令），另一类是以.bat结尾的（windows命令）。
+主要：很多环境变量的设置都在此处，例如可以设置JDK路径、TOMCAT路径startup 用来启动tomcatshutdown 用来关闭tomcat修改catalina可以设置tomcat的内存conf目录
+server.xml可以设置端口号、设置域">
 
 
 
@@ -363,15 +369,19 @@ conf目录主要是用来存放tomcat的一些配置文件。重">
       
 
       
-        <ol>
-<li><strong>bin目录</strong>主要是用来存放tomcat的命令，主要有两大类，一类是以.sh结尾的（linux命令），另一类是以.bat结尾的（windows命令）。<br>重要：<br>很多环境变量的设置都在此处，例如可以设置JDK路径、TOMCAT路径<br>startup 用来启动tomcat<br>shutdown 用来关闭tomcat<br>修改catalina可以设置tomcat的内存</li>
-<li><strong>conf目录</strong>主要是用来存放tomcat的一些配置文件。<br>重要：<br>server.xml可以设置端口号、设置域名或IP、默认加载的项目、请求编码<br>web.xml可以设置tomcat支持的文件类型<br>context.xml可以用来配置数据源之类的<br>tomcat-users.xml用来配置管理tomcat的用户与权限<br>在Catalina目录下可以设置默认加载的项目</li>
-<li><strong>lib目录</strong>主要用来存放tomcat运行需要加载的jar包。<br>例如，像连接数据库的jdbc的包我们可以加入到lib目录中来。</li>
-<li><strong>logs目录</strong>用来存放tomcat在运行过程中产生的日志文件，非常重要的是在控制台输出的日志。（清空不会对tomcat运行带来影响）<br>在windows环境中，控制台的输出日志在catalina.xxxx-xx-xx.log文件中<br>在linux环境中，控制台的输出日志在catalina.out文件中</li>
-<li><strong>temp目录</strong>用户存放tomcat在运行过程中产生的临时文件。（清空不会对tomcat运行带来影响）</li>
-<li><strong>webapps目录</strong>用来存放应用程序，当tomcat启动时会去加载webapps目录下的应用程序。可以以文件夹、war包、jar包的形式发布应用。<br>当然，你也可以把应用程序放置在磁盘的任意位置，在配置文件中映射好就行。</li>
-<li><strong>work目录</strong>用来存放tomcat在运行时的编译后文件，例如JSP编译后的文件。<br>清空work目录，然后重启tomcat，可以达到清除缓存的作用。~</li>
-</ol>
+        <h3 id="bin目录"><a href="#bin目录" class="headerlink" title="bin目录"></a>bin目录</h3><ul>
+<li>主要是用来存放tomcat的命令，主要有两大类，一类是以.sh结尾的（linux命令），另一类是以.bat结尾的（windows命令）。</li>
+<li>主要：<br>很多环境变量的设置都在此处，例如可以设置JDK路径、TOMCAT路径<br>startup 用来启动tomcat<br>shutdown 用来关闭tomcat<br>修改catalina可以设置tomcat的内存<h3 id="conf目录"><a href="#conf目录" class="headerlink" title="conf目录"></a>conf目录</h3></li>
+<li>server.xml可以设置端口号、设置域名或IP、默认加载的项目、请求编码</li>
+<li>web.xml可以设置tomcat支持的文件类型</li>
+<li>context.xml可以用来配置数据源之类的</li>
+<li>tomcat-users.xml用来配置管理tomcat的用户与权限<br>在Catalina目录下可以设置默认加载的项目<h3 id="lib目录"><a href="#lib目录" class="headerlink" title="lib目录"></a>lib目录</h3></li>
+<li>主要用来存放tomcat运行需要加载的jar包。<br>例如，像连接数据库的jdbc的包我们可以加入到lib目录中来。<h3 id="logs目录"><a href="#logs目录" class="headerlink" title="logs目录"></a>logs目录</h3></li>
+<li>用来存放tomcat在运行过程中产生的日志文件，非常重要的是在控制台输出的日志。（清空不会对tomcat运行带来影响）<br>在windows环境中，控制台的输出日志在catalina.xxxx-xx-xx.log文件中<br>在linux环境中，控制台的输出日志在catalina.out文件中<h3 id="temp目录"><a href="#temp目录" class="headerlink" title="temp目录"></a>temp目录</h3>用户存放tomcat在运行过程中产生的临时文件。（清空不会对tomcat运行带来影响）<h3 id="webapps目录"><a href="#webapps目录" class="headerlink" title="webapps目录"></a>webapps目录</h3></li>
+<li>用来存放应用程序，当tomcat启动时会去加载webapps目录下的应用程序。可以以文件夹、war包、jar包的形式发布应用。<br>当然，你也可以把应用程序放置在磁盘的任意位置，在配置文件中映射好就行。<h3 id="work目录"><a href="#work目录" class="headerlink" title="work目录"></a>work目录</h3></li>
+<li>用来存放tomcat在运行时的编译后文件，例如JSP编译后的文件。</li>
+<li>清空work目录，然后重启tomcat，可以达到清除缓存的作用。</li>
+</ul>
 
       
     </div>
@@ -459,8 +469,17 @@ conf目录主要是用来存放tomcat的一些配置文件。重">
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -533,6 +552,22 @@ conf目录主要是用来存放tomcat的一些配置文件。重">
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#bin目录"><span class="nav-number">1.</span> <span class="nav-text">bin目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#conf目录"><span class="nav-number">2.</span> <span class="nav-text">conf目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#lib目录"><span class="nav-number">3.</span> <span class="nav-text">lib目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#logs目录"><span class="nav-number">4.</span> <span class="nav-text">logs目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#temp目录"><span class="nav-number">5.</span> <span class="nav-text">temp目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#webapps目录"><span class="nav-number">6.</span> <span class="nav-text">webapps目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#work目录"><span class="nav-number">7.</span> <span class="nav-text">work目录</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
