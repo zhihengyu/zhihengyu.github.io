@@ -102,7 +102,7 @@
 使用频率最高的语句
 语法
 123456789SELECT [ALL | DISTINCT]&amp;#123;*|table.*|[table.field1[as alias1][,table.field2[as alias2]][,...]]&amp;#125;FROM table_name [a">
-<meta property="og:updated_time" content="2017-03-01T13:31:07.037Z">
+<meta property="og:updated_time" content="2017-03-01T13:37:03.139Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MySQL数据库（DQL）">
 <meta name="twitter:description" content="DQL(数据查询语句)
@@ -384,7 +384,7 @@
 <li>数据库语言中最核心、最重要的语句</li>
 <li>使用频率最高的语句</li>
 <li><p>语法</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">SELECT [ALL | DISTINCT]</div><div class="line">&#123;*|table.*|[table.field1[as alias1][,table.field2[as alias2]][,...]]&#125;</div><div class="line">FROM table_name [as table_alias]</div><div class="line">	[left|out|inner join table_name2] #联合查询</div><div class="line">	[WHERE ...]		#指定结果需满足的条件</div><div class="line">	[GROUP BY ...] 	#指定结果按照哪几个字段来分组</div><div class="line">	[HAVING ...]	#过滤分组的记录必须满足的次要条件</div><div class="line">	[ORDER BY ...]	#指定查询记录按一个或多个条件排序</div><div class="line">	[LIMIT &#123;[offset,]row_count | row_count OFFSET offset &#125;];  #指定查询的记录从哪条至哪条</div></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">SELECT</span> [ALL | <span class="keyword">DISTINCT</span>]</div><div class="line">&#123;*|table.*|[table.field1[<span class="keyword">as</span> alias1][,table.field2[<span class="keyword">as</span> alias2]][,...]]&#125;</div><div class="line"><span class="keyword">FROM</span> table_name [<span class="keyword">as</span> table_alias]</div><div class="line">	[<span class="keyword">left</span>|<span class="keyword">out</span>|<span class="keyword">inner</span> <span class="keyword">join</span> table_name2] <span class="comment">/*联合查询*/</span></div><div class="line">	[<span class="keyword">WHERE</span> ...]		<span class="comment">/*指定结果需满足的条件*/</span></div><div class="line">	[<span class="keyword">GROUP</span> <span class="keyword">BY</span> ...] 	<span class="comment">/*指定结果按照哪几个字段来分组*/</span></div><div class="line">	[<span class="keyword">HAVING</span> ...]	<span class="comment">/*过滤分组的记录必须满足的次要条件*/</span></div><div class="line">	[<span class="keyword">ORDER</span> <span class="keyword">BY</span> ...]	<span class="comment">/*指定查询记录按一个或多个条件排序*/</span></div><div class="line">	[<span class="keyword">LIMIT</span> &#123;[<span class="keyword">offset</span>,]<span class="keyword">row_count</span> | <span class="keyword">row_count</span> <span class="keyword">OFFSET</span> <span class="keyword">offset</span> &#125;];  <span class="comment">/*指定查询的记录从哪条至哪条*/</span></div></pre></td></tr></table></figure>
 </li>
 <li><p>[]括号代表可选的；</p>
 </li>
@@ -408,7 +408,12 @@
 </ul>
 <h4 id="表达式的使用"><a href="#表达式的使用" class="headerlink" title="表达式的使用"></a>表达式的使用</h4><ul>
 <li>表达式一般由文本值、列值、NULL、函数和操作符等组成</li>
-<li>应用场景<br>SELECT语句返回结果列中使用<br>SELECT语句的ORDER BY、HAVING等子句中使用<br>DML语句中的where条件语句中用表达式<br>*返回的列中使用，如：<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">#返回MySQL版本和计算结果</div><div class="line">SELECT version(),100*3 	</div><div class="line">#给返回结果中的课时都加10个课时</div><div class="line">SELECT SubjectName "课程名称"，ClassHour+10 AS "新学时" FROM subject;</div></pre></td></tr></table></figure>
+<li>应用场景<br>SELECT语句返回结果列中使用<br>SELECT语句的ORDER BY、HAVING等子句中使用<br>DML语句中的where条件语句中用表达式</li>
+<li><p>返回的列中使用，如：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*返回MySQL版本和计算结果*/</span></div><div class="line"><span class="keyword">SELECT</span> <span class="keyword">version</span>(),<span class="number">100</span>*<span class="number">3</span>; 	</div><div class="line"><span class="comment">/*给返回结果中的课时都加10个课时*/</span></div><div class="line"><span class="keyword">SELECT</span> SubjectName <span class="string">"课程名称"</span>，ClassHour+<span class="number">10</span> <span class="keyword">AS</span> <span class="string">"新学时"</span> <span class="keyword">FROM</span> subject;</div></pre></td></tr></table></figure>
+</li>
+<li><p>避免SQL返回结果中包含“.”，“*”和括号等干扰开发语言程序，如：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*返回结果不会与后台开发程序发生混淆*/</span></div><div class="line"><span class="keyword">SELECT</span> <span class="keyword">version</span>() <span class="keyword">as</span> MySQL_V,<span class="number">123.44</span>*<span class="number">100</span> <span class="keyword">AS</span> EXPRESSION;</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <h4 id="WHERE条件语句"><a href="#WHERE条件语句" class="headerlink" title="WHERE条件语句"></a>WHERE条件语句</h4><h4 id="连接查询"><a href="#连接查询" class="headerlink" title="连接查询"></a>连接查询</h4><h4 id="ORDER-BY排序"><a href="#ORDER-BY排序" class="headerlink" title="ORDER BY排序"></a>ORDER BY排序</h4><h4 id="LIMIT分页查询"><a href="#LIMIT分页查询" class="headerlink" title="LIMIT分页查询"></a>LIMIT分页查询</h4><h4 id="子查询"><a href="#子查询" class="headerlink" title="子查询"></a>子查询</h4><h4 id="常用统计函数-聚合函数"><a href="#常用统计函数-聚合函数" class="headerlink" title="常用统计函数(聚合函数)"></a>常用统计函数(聚合函数)</h4><h4 id="GROUP-BY分组"><a href="#GROUP-BY分组" class="headerlink" title="GROUP BY分组"></a>GROUP BY分组</h4>
